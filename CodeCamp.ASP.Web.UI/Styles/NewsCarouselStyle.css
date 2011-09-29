@@ -1,0 +1,140 @@
+﻿            .newsCarousel-container-vertical {
+                width: 300px;
+                height: 300px;
+                background: #e8e8e8;
+                border: 1px solid #fffff;
+            }
+ 
+            .newsCarousel-clip-vertical {
+                top: 15px;
+                /* width: 290px; */
+                width: 200px;
+                height: 270px;
+                margin: 0px 5px;
+                z-index: 20;
+            }
+ 
+            #newsCarousel li,
+            .newsCarousel-item-vertical,
+            .newsCarousel-item-placeholder-vertical {
+                /* width: 453px;*/
+                width: 730px;
+                height: 500px;
+                margin: 5px 5px;
+            }
+ 
+            .newsCarousel-item h3,
+            .newsCarousel-item p {
+                margin: 0;
+                font-size: 60%;
+            }
+ 
+            .newsCarousel-next-vertical {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 200px;
+                /*width: 300px;*/
+                height: 14px;
+                cursor: pointer;
+                border-top: 1px solid #fff;
+                background: #4088b8 url(images/next-horizontal.png) no-repeat center;
+            }
+ 
+            .newsCarousel-next-disabled-vertical {
+                cursor: default;
+                opacity: .5;
+                -moz-opacity: .5;
+                filter: alpha(opacity=50);
+            }
+ 
+            .newsCarousel-prev-vertical {
+                position: absolute;
+                top: 0;
+                left: 0;
+                /*width: 300px;*/
+                width: 200px;
+                height: 14px;
+                cursor: pointer;
+                border-bottom: 1px solid #fff;
+                background: #4088b8 url(images/previous-horizontal.png) no-repeat center;
+            }
+ 
+            .newsCarousel-prev-disabled-vertical {
+                cursor: default;
+                opacity: .5;
+                -moz-opacity: .5;
+                filter: alpha(opacity=50);
+            }
+                      
+   /*****************************************************/
+            .aCarousel-container-vertical {
+                width: 150px;
+                height: 362px;
+                background: #e8e8e8;
+                border: 1px solid #fff;
+            }
+ 
+            .aCarousel-clip-vertical {
+                top: 15px;
+                /* width: 290px; */
+                width: 400px;
+                height: 270px;
+                margin: 0 5px;
+                z-index: 20;
+            }
+ 
+            #aCarousel li,
+            .aCarousel-item-vertical,
+            .aCarousel-item-placeholder-vertical {
+                /* width: 453px;*/
+                width: 430px;
+                height: auto;
+                margin: 5px;
+            }
+ 
+            .aCarousel-item h3,
+            .aCarousel-item p {
+                margin: 0;
+                font-size: 90%;
+            }
+ 
+            .aCarousel-next-vertical {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 200px;
+                /*width: 300px;*/
+                height: 14px;
+                cursor: pointer;
+                border-top: 1px solid #fff;
+                background: #4088b8 url(images/arrow-down.gif) no-repeat center;
+            }
+ 
+            .aCarousel-next-disabled-vertical {
+                cursor: default;
+                opacity: .5;
+                -moz-opacity: .5;
+                filter: alpha(opacity=50);
+            }
+ 
+            .aCarousel-prev-vertical {
+                position: absolute;
+                top: 0;
+                left: 0;
+                /*width: 300px;*/
+                width: 50px;
+                height: 14px;
+                cursor: pointer;
+                border-bottom: 1px solid #fff;
+                background: #4088b8 url(images/arrow-up.gif) no-repeat center;
+            }
+ 
+            .aCarousel-prev-disabled-vertical {
+                cursor: default;
+                opacity: .5;
+                -moz-opacity: .5;
+                filter: alpha(opacity=50);
+            }
+                         
+            

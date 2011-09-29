@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2421E513-5EC7-424E-B308-B6E041FD73DE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeCamp.ASP.Web.UI</RootNamespace>
+    <AssemblyName>CodeCamp.ASP.Web.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplicationList>{B9DCE48E-42C1-4769-8440-87B570B45837}|..\CodeCamp.RIA.UI\CodeCamp.RIA.UI.csproj|ClientBin|False</SilverlightApplicationList>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\Logging\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\Logging\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\Logging\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\Logging\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\Logging\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\Unity\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\Unity\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\Unity\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceModel.DomainServices.Tools, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.DomainServices.WebControls, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ServiceModel.DomainServices.EntityFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.DomainServices.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.DomainServices.Hosting.OData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.DomainServices.Server, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="WebFormsMvp">
+      <HintPath>..\lib\WebFormsMvp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="AgendaView.aspx" />
+    <Content Include="AttendeePasswordReset.aspx" />
+    <Content Include="ClientBin\CodeCamp.RIA.UI.xap" />
+    <Content Include="CodeCampRedirect.aspx" />
+    <Content Include="CodeCampRIA.aspx" />
+    <Content Include="ContactView.aspx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Home.aspx" />
+    <Content Include="Images\Agenda.png" />
+    <Content Include="Images\bg.gif" />
+    <Content Include="Images\bg_header.2011a.jpg" />
+    <Content Include="Images\bg_header.2011b.jpg" />
+    <Content Include="Images\bg_header.2011b.withGlow.jpg" />
+    <Content Include="Images\bg_header.2011b.withGlow_Register.jpg" />
+    <Content Include="Images\bing.png" />
+    <Content Include="Images\CodeCamp-Small.png" />
+    <Content Include="Images\CodeCamp-Square.png" />
+    <Content Include="Images\CodeCamp.gif" />
+    <Content Include="Images\CodeCamp.png" />
+    <Content Include="Images\ContactUs.png" />
+    <Content Include="Images\devexpress.png" />
+    <Content Include="Images\Infragistics.png" />
+    <Content Include="Images\linxterlogo.jpg" />
+    <Content Include="Images\LouOfOrlando.png" />
+    <Content Include="Images\microsoft.png" />
+    <Content Include="Images\otloveswp7.png" />
+    <Content Include="Images\SeminoleState.png" />
+    <Content Include="Images\onetug.113x132.jpg" />
+    <Content Include="Images\codecamp.banner.jpg" />
+    <Content Include="Images\SponsorOurEvent.orange.png" />
+    <Content Include="Images\Sponsors\4Corner.png" />
+    <Content Include="Images\Sponsors\agilezen.png" />
+    <Content Include="Images\Sponsors\AppliedInnovations.png" />
+    <Content Include="Images\Sponsors\Apress.png" />
+    <Content Include="Images\Sponsors\ArrowConsulting.png" />
+    <Content Include="Images\Sponsors\aspose.png" />
+    <Content Include="Images\Sponsors\AtlanticNet.png" />
+    <Content Include="Images\Sponsors\AxoSoft.png" />
+    <Content Include="Images\Sponsors\BlueSky.png" />
+    <Content Include="Images\Sponsors\CODEMagazine.png" />
+    <Content Include="Images\Sponsors\ComponentArt.png" />
+    <Content Include="Images\Sponsors\ComponentOne.png" />
+    <Content Include="Images\Sponsors\DevExpress.png" />
+    <Content Include="Images\Sponsors\DeVry.png" />
+    <Content Include="Images\Sponsors\DNNCorp.png" />
+    <Content Include="Images\Sponsors\FanTagz.png" />
+    <Content Include="Images\Sponsors\GrapeCity.png" />
+    <Content Include="Images\Sponsors\infragistics.png" />
+    <Content Include="Images\Sponsors\IronSpeed.png" />
+    <Content Include="Images\Sponsors\LearnVisualStudio.png" />
+    <Content Include="Images\Sponsors\LogicNP.png" />
+    <Content Include="Images\Sponsors\M2E.png" />
+    <Content Include="Images\Sponsors\MicroApplications.png" />
+    <Content Include="Images\Sponsors\microsoft.png" />
+    <Content Include="Images\Sponsors\Murach.png" />
+    <Content Include="Images\Sponsors\noemax.png" />
+    <Content Include="Images\Sponsors\Onetug.png" />
+    <Content Include="Images\Sponsors\OReilly.png" />
+    <Content Include="Images\Sponsors\PDSA.png" />
+    <Content Include="Images\Sponsors\Perpetuum.png" />
+    <Content Include="Images\Sponsors\Pluralsight.png" />
+    <Content Include="Images\Sponsors\PointClick.png" />
+    <Content Include="Images\Sponsors\PottsConsulting.png" />
+    <Content Include="Images\Sponsors\PowerDNN.png" />
+    <Content Include="Images\Sponsors\pruf.png" />
+    <Content Include="Images\Sponsors\SeminoleState.png" />
+    <Content Include="Images\Sponsors\SQLRally.png" />
+    <Content Include="Images\Sponsors\steema.png" />
+    <Content Include="Images\Sponsors\tekkfusion.png" />
+    <Content Include="Images\Sponsors\telerik.png" />
+    <Content Include="Images\Sponsors\TXTextControl.png" />
+    <Content Include="Images\Sponsors\veredus.png" />
+    <Content Include="Images\Sponsors\viblend.png" />
+    <Content Include="Images\Sponsors\wrox.png" />
+    <Content Include="Images\Sponsors\xceed.png" />
+    <Content Include="Images\works-on-my-machine-starburst.png" />
+    <Content Include="Images\yum.jpg" />
+    <Content Include="LocationView.aspx" />
+    <Content Include="PresentationPickupView.aspx" />
+    <Content Include="Presentations\PresentationStub.xml" />
+    <Content Include="RegisterView.aspx" />
+    <Content Include="Scripts\jquery-1.4.2.min.js" />
+    <Content Include="Scripts\jquery.jcarousel.min.js" />
+    <Content Include="Scripts\occ.home.aspx.js" />
+    <Content Include="Silverlight.js" />
+    <Content Include="Styles\next-horizontal.png" />
+    <Content Include="Styles\next-vertical.png" />
+    <Content Include="Styles\prev-horizontal.png" />
+    <Content Include="Styles\prev-vertical.png" />
+    <Content Include="Styles\SponsorCarouselStyle.css" />
+    <Content Include="Styles\NewsCarouselStyle.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\skin.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="SessionView.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgendaView.aspx.cs">
+      <DependentUpon>AgendaView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgendaView.aspx.designer.cs">
+      <DependentUpon>AgendaView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeePasswordReset.aspx.cs">
+      <DependentUpon>AttendeePasswordReset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendeePasswordReset.aspx.designer.cs">
+      <DependentUpon>AttendeePasswordReset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodeCampRedirect.aspx.cs">
+      <DependentUpon>CodeCampRedirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeCampRedirect.aspx.designer.cs">
+      <DependentUpon>CodeCampRedirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactView.aspx.cs">
+      <DependentUpon>ContactView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactView.aspx.designer.cs">
+      <DependentUpon>ContactView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OccMembershipProvider.cs" />
+    <Compile Include="CodeCampRIA.aspx.cs">
+      <DependentUpon>CodeCampRIA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeCampRIA.aspx.designer.cs">
+      <DependentUpon>CodeCampRIA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Encryption.cs" />
+    <Compile Include="Helpers\ServiceExtensions.cs" />
+    <Compile Include="Helpers\ServiceProvider.cs" />
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LocationView.aspx.cs">
+      <DependentUpon>LocationView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LocationView.aspx.designer.cs">
+      <DependentUpon>LocationView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationPickupView.aspx.cs">
+      <DependentUpon>PresentationPickupView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationPickupView.aspx.designer.cs">
+      <DependentUpon>PresentationPickupView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterView.aspx.cs">
+      <DependentUpon>RegisterView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterView.aspx.designer.cs">
+      <DependentUpon>RegisterView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\RegistrationDataResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrationDataResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ValidationErrorResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValidationErrorResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SessionView.aspx.cs">
+      <DependentUpon>SessionView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionView.aspx.designer.cs">
+      <DependentUpon>SessionView.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Images\People\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeCamp.ASP.UI.Infrastructure\CodeCamp.ASP.UI.Infrastructure.csproj">
+      <Project>{9D6774B7-AA1F-4943-B32A-E2E770089BE3}</Project>
+      <Name>CodeCamp.ASP.UI.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeCamp.RIA.Data.Web\CodeCamp.RIA.Data.Web.csproj">
+      <Project>{B616046B-CA09-4DF3-9230-26B0856ACA69}</Project>
+      <Name>CodeCamp.RIA.Data.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RegistrationDataResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RegistrationDataResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ValidationErrorResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationErrorResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\OCC2011.Current.Agenda.pdf" />
+    <None Include="Images\OCC2011.Contributor Information.pdf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>7777</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

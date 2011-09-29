@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{ECD6D718-D1CF-4119-97F3-97C25A0DFBF9}") = "CodeCamp.Admin", "CodeCamp.Admin.lsproj", "{DD08608E-6C8B-42DE-BD06-750A0156861B}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD08608E-6C8B-42DE-BD06-750A0156861B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD08608E-6C8B-42DE-BD06-750A0156861B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD08608E-6C8B-42DE-BD06-750A0156861B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD08608E-6C8B-42DE-BD06-750A0156861B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{479DF0CD-85D8-4DDB-B0CE-8D362673B525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479DF0CD-85D8-4DDB-B0CE-8D362673B525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479DF0CD-85D8-4DDB-B0CE-8D362673B525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479DF0CD-85D8-4DDB-B0CE-8D362673B525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{302BF27F-187F-4564-A4BB-DEED406A4E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302BF27F-187F-4564-A4BB-DEED406A4E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302BF27F-187F-4564-A4BB-DEED406A4E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302BF27F-187F-4564-A4BB-DEED406A4E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE3845F7-2184-40BC-BC87-D9C9DD6D3875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE3845F7-2184-40BC-BC87-D9C9DD6D3875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE3845F7-2184-40BC-BC87-D9C9DD6D3875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE3845F7-2184-40BC-BC87-D9C9DD6D3875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82DAD226-D21A-4444-BB3D-B005FCEE7369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82DAD226-D21A-4444-BB3D-B005FCEE7369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82DAD226-D21A-4444-BB3D-B005FCEE7369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82DAD226-D21A-4444-BB3D-B005FCEE7369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E99028F-797E-4F9D-BBC4-56D4D3EC00C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E99028F-797E-4F9D-BBC4-56D4D3EC00C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E99028F-797E-4F9D-BBC4-56D4D3EC00C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E99028F-797E-4F9D-BBC4-56D4D3EC00C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

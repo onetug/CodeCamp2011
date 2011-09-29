@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="CodeCamp.RIA.UI.Views.SponsorWidgetView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="500" d:DesignWidth="140">
+        <Border BorderBrush="{StaticResource ColorAccentSubduedBrush}" BorderThickness="3" 
+                HorizontalAlignment="Left" CornerRadius="2" Background="White" Width="132" 
+                MaxHeight="500" VerticalAlignment="Top" Margin="-5,5,0,0" Opacity="1" >
+            <Grid IsHitTestVisible="False" x:Name="RandomSponsorGrid" HorizontalAlignment="Left" Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image x:Name="Image" Source="{Binding Image, Converter={StaticResource StringToUriConverter}}" Width="120"
+                       Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,2,0,0"/>
+                <StackPanel Grid.Row="1" Orientation="Vertical" Background="White" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Top">
+                        <TextBlock x:Name="SponsorshipLevel" Text="{Binding SponsorshipLevel.Name}" Margin="0,2,2,0" 
+                                   Foreground="{StaticResource InputSelectionBrush}" FontSize="11" FontStyle="Italic"
+                                   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <TextBlock Text="Sponsor" Margin="0,2,0,0"
+                                   Foreground="{StaticResource InputSelectionBrush}" FontSize="11" FontStyle="Italic"
+                                   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    </StackPanel>
+                    <TextBlock x:Name="Description" Text="{Binding Description}" Margin="2,0,2,5" TextWrapping="Wrap" 
+                                   Height="Auto" Width="122"
+                                   Foreground="{StaticResource InputSelectionBrush}" FontSize="11"  
+                                   HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+</UserControl>

@@ -1,0 +1,41 @@
+﻿<navigation:Page 
+  xmlns:my="clr-namespace:CodeCamp.RIA.UI.Infrastructure;assembly=CodeCamp.RIA.UI.Infrastructure"
+  x:Class="CodeCamp.RIA.UI.Views.AgendaView" 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation" 
+  xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" 
+  xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+  xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" 
+  xmlns:ca="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro" 
+  xmlns:Controls="clr-namespace:CodeCamp.RIA.UI.Controls" 
+  mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480"
+  Style="{StaticResource PageStyle}" >
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer x:Name="LeftScrollViewer" Grid.Column="0" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden">
+
+            <!--<my:ScheduleGrid x:Name="MyAgenda" />-->
+            <my:ScheduleGrid x:Name="MyAgenda"  Sessions="{Binding MyAgenda, Mode=TwoWay}" SelectSession="MyAgenda_SelectSession" />
+
+        </ScrollViewer>
+
+        <ScrollViewer x:Name="RightScrollViewer" Grid.Column="2" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Auto">
+
+            <!--<my:ScheduleGrid x:Name="Schedule"  ShowTimeslots="False" SelectSession="Schedule_SelectSession"/>-->
+            <my:ScheduleGrid x:Name="Schedule" Sessions="{Binding Schedule, Mode=TwoWay}"  ShowTimeslots="False" SelectSession="Schedule_SelectSession"/>
+
+        </ScrollViewer>
+
+    </Grid>
+    
+</navigation:Page>

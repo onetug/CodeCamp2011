@@ -1,0 +1,2330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Collection xmlns:p="http://schemas.microsoft.com/livelabs/pivot/collection/2009" SchemaVersion="1.0" Name="Orlando Code Camp 2011 Sessions" p:Icon="http://www.orlandocodecamp.com/images/CodeCamp-small.png" p:BrandImage="http://www.orlandocodecamp.com/pivot/images/CodeCamp-icon.png" p:AdditionalSearchText="Orlando Code Camp, ONETUG" xmlns="http://schemas.microsoft.com/collection/metadata/2009">
+  <FacetCategories>
+    <FacetCategory Name="Speaker" Type="String" p:IsFilterVisible="true" p:IsWordWheelVisible="true" p:IsMetaDataVisible="true" />
+    <FacetCategory Name="Room" Type="String" p:IsFilterVisible="true" p:IsWordWheelVisible="true" p:IsMetaDataVisible="true" />
+    <FacetCategory Name="Level" Type="Number" p:IsFilterVisible="true" p:IsWordWheelVisible="false" p:IsMetaDataVisible="true" />
+    <FacetCategory Name="Track" Type="String" p:IsFilterVisible="true" p:IsWordWheelVisible="true" p:IsMetaDataVisible="true" />
+    <FacetCategory Name="Position" Type="String" p:IsFilterVisible="false" p:IsWordWheelVisible="true" p:IsMetaDataVisible="true" />
+    <FacetCategory Name="Start" Type="DateTime" Format="h:mm tt" p:IsFilterVisible="true" p:IsWordWheelVisible="false" p:IsMetaDataVisible="true" />
+    <FacetCategory Name="End" Type="DateTime" Format="h:mm tt" p:IsFilterVisible="false" p:IsWordWheelVisible="false" p:IsMetaDataVisible="true" />
+  </FacetCategories>
+  <Items ImgBase="Sessions_files\rutowwbd.w3q.xml">
+    <Item Id="0" Img="#0" Name="Kickoff">
+      <Description>Welcome to CodeCamp, announcements, sponsors, etc</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Esteban Garcia" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J104" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Keynote" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Principal Consultant" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T08:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="1" Img="#1" Name="Is Azure Right For My Applications?&#x9;&#x9;">
+      <Description>What is Microsoft Azure?  Is Azure right for my applications?  Do I have to use .NET, or can I develop in PHP or Java?  What level of calculus do I need to figure out the billing?  These questions and more answered by an experienced enterprise developer an</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Richard Dudley" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="C110B" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Azure" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Technical Evangelist" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="2" Img="#2" Name="Using External Data in SharePoint and Microsoft Office Without Code&#x9;">
+      <Description>In this session, we will examine how to create connections to an external data source (SQL Server) using SharePoint Designer.  Once the External Data Content Type exists, we can display and manipulate the data within SharePoint using an External List.  But</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Michael Antonovich" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V006" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Collaboration" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Asst Dir Web Applications" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="3" Img="#3" Name="Making Games for Windows Phone 7 with XNA 4.0&#x9;&#x9;&#x9;&#x9;&#x9;">
+      <Description>In this talk, we will cover what's new in XNA 4.0, especially as it pertains to Windows Phone 7. We'll cover phone features, using the emulator and how to take advantage of the various sensors (like the Accelerometer) and features (MultiTouch, Gestures, Pu</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Chris G. Williams" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J101" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Design &amp; Animation" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Principal Consultant" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="4" Img="#4" Name="Memory Management Fundamentals – Garbage Collection Deep Dive&#x9;">
+      <Description>Memory management in .NET is one of the fundamental aspects of .NET, yet it also seems to be one of the most misunderstood concepts in the CLR. Take an in-depth look at how .NET manages memory, allocates resources, and how the Garbage Collector works.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Scott Dorman" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J108" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Fundamentals" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="5" Img="#5" Name="Day of DotNetNuke Keynote&#x9;&#x9;">
+      <Description>Come to this keynote to hear what the CEO of the DotNetNuke Corporation has to say.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Navin Nagiah" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J100" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Keynote" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="CEO" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="6" Img="#6" Name="Visual Basic Language Features in 2010&#x9;">
+      <Description>Visual Basic has always been about developing applications to get the job done quickly.  During the 2008 and 2010 product cycles many new language features have been added to provide enhanced functionality and productivity.  Come learn about many of these</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Spotty Bowles" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J109" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Languages" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Visual Basic Language Features in 2010" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="7" Img="#7" Name="Intro to Open Data Protocol (OData)&#x9;">
+      <Description>In this session, we will provide an overview of OData and how to use .NET4 on consuming and creating an OData endpoint. The Open Data Protocol (OData) applies web technologies such as HTTP, AtomPub and JSON to enable a wide range of data sources to be expo</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="John Wang" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V101" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Services and More" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Intro to Open Data Protocol (OData)" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="8" Img="#8" Name="Applied Object-Oriented Design Principles&#x9;">
+      <Description>This session will cover intermediate and advanced OO design principles and patterns, including the Composite Pattern, Command Pattern, Null Object Pattern, "To enum or not to enum," and more. The session will provide a conceptual overview and include short</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Jay Hill" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J112" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Showcase" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="9" Img="#9" Name="Dynamic Prototyping&#x9;">
+      <Description>This is the first part in my Silverlight LOB talks and covers why prototyping is important and how to use it within an Enterprise.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Greg Leonardo" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V003" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Silverlight" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Lead Appllication Architect" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="10" Img="#10" Name="Zero to Cube - Introduction to Analysis Services&#x9;">
+      <Description>Come get multidimensional with Adam as we explore the cool things you can do with analysis services quickly and begin delivering ad-hoc analysis to your end users that you can control.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Adam Jorgensen" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J102" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="SQL Server" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="President, Pragmatic Works" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="11" Img="#11" Name="Code Generation with T4 and Visual Studio 2010&#x9;">
+      <Description>T4 allows you to use simple ASP.NET-like template syntax to generate application source code, configuration files, stored procedures and more. This session shows you everything you need to start building your own or customizing existing code generators, in</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Oleg Sych" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V107" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Visual Studio &amp; ALM" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Senior Consultant" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="12" Img="#12" Name="Enabling Payments on your WebMatrix Powered eCommrce Sites&#x9;">
+      <Description>Microsoft launched the first version of WebMatrix; a brand new development tool that includes everything you need for web development. PayPal released helper classes that empowers developers to implement payments on the websites they built using WebMatrix.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="RASESH SHAH" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="C110A" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Web" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Technology Evangelist" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="13" Img="#13" Name="Learn to Use Accelerometer and Location Service (GPS) in Windows Phone Application&#x9;">
+      <Description>You will learn two specific features of Windows Phone 7: Accelerometer and Location Service (GPS). Accelerometer is popular features in modern smartphone allowing you to use the phone like joystick (think of Wii remote) and you will learn the basics of the</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Henry Lee" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J100" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="WP7" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="President" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T08:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T09:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="14" Img="#14" Name="High Load Web Applications on Azure">
+      <Description>This is an advanced session that will cover common scaling issues with high load applications and how the Windows Azure platform can effectively and efficiently handle those issues. Topics will include Azure Table storage, Azure Queues, and SQL Azure.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Nathan Totten" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="C110B" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Azure" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Sr. Software Developer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="15" Img="#15" Name="Configuring Forms Authentication is SharePoint 2010&#x9;">
+      <Description>In this session, we will discuss Forms Based Authentication (FBA)—why you’d want to use it, what can it do, and how to configure your SharePoint portal to use FBA.  Along the way, we will look at some of the common problems that you will face while configu</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Raleigh Johnson" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V006" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Collaboration" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Technical Engagement Engineer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="16" Img="#16" Name="Animating in Blend: It's ALIVE&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;">
+      <Description>In this session, we’ll go over some interaction design basics then launch into a demonstration of the animation capabilities in Blend — from state changes to complex animations for games. Learn best practices for choosing when to use a vector over a bitmap</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Diane Leeper" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J100" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Design &amp; Animation" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Creative Alchemist" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="17" Img="#17" Name="Installation and Upgrading of DotNetNuke and DNN Modules">
+      <Description>There are quite a few misconceptions out there about the level of difficulty when installing and upgrading DotNetNuke.  This session is intended to walk you through the entire installation and upgrade process, outlining some of the common problems and solu</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Will Strohl" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J104" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Administration" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Sales Engineer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="18" Img="#18" Name="Skinning 101 - A Complete Introduction to DotNetNuke Skinning">
+      <Description>This session will cover the absolute, basic fundamentals of DNN skinning. Topics covered will be: what skining is and is not; skin using HTML or .ascx; basic skin objects; packaging your skin. This session will not cover styling a skin, just the basics!</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Ralph Williams" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J104" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Design" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Front End Web Developer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="19" Img="#19" Name="DotNetNuke Development: Leveraging the Core&#x9;">
+      <Description>There are many books that give developers the "basics" of creating custom modules, but how do you dig deeper?  This session will start to explore more of the nitty gritty sections of the DotNetNuke core API and will show you how to navigate the API and met</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Mitchel Sellers" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J105" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Development" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="CEO/Director of Development" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="20" Img="#20" Name="Back to the Basics: What is .Net?&#x9;">
+      <Description>No other name in history has confused more people on the planet than when Microsoft named their development platform .NET. For a lot of developers .NET remains a mystery and it is often confused with many things. The Back to the Basics series is a primer f</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Keith Elder" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J108" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Fundamentals" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Director of Software Engineering" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="21" Img="#21" Name="Asynchronous Programming in Visual Basic and C#&#x9;">
+      <Description>Are you curious about the features included in the Visual Studio 2010 Async CTP?  Are you wondering how Async compares to existing .NET asynchronous paradigms and how it’s going to make your work any easier?  We’ll start with a quick overview of Task-based</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Kevin Halverson" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J109" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Languages" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Senior Test Lead" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="22" Img="#22" Name="Decoupled UI&#x9;">
+      <Description>Decoupling the UI from your application logic creates a separation of concerns where the User Experience and application logic are built as separate entities.  Decoupling allows a developer to easily multi-target the UI (Traditional WPF, Silverlight, WinFo</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Page Horton" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J112" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Patterns" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Architect" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="23" Img="#23" Name="RAD Development in VS2010 using EF4 with WCF Data Services and SL4&#x9;">
+      <Description>This talk will focus on rapid application development using Entity Framework 4 with WCF Data Services and Silverlight 4 in Visual Studio 2010. There are a number of new features in both EF4 and WCF4 which enable more powerful data binding scenarios in dist</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Stan Schultes" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V101" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Services and More" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Dev Lead at SarasotaDev and BarCamp Sarasota" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="24" Img="#24" Name="Work From Anywhere = WFA (Part 1)&#x9;">
+      <Description>I’m proposing a new TLA or three letter acronym, “WFA” or Work From Anywhere.  The three ingredients, Windows Phone 7, Azure and Facebook provide you, the individual developer, the necessary components to create highly profitable, highly scalable applicati</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Kevin Wolf" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J100" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Showcase" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Phone Dev MVP" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="25" Img="#25" Name="Silverlight LOB&#x9;">
+      <Description>Silverlight line of business architecture and guidance talk on using Silverlight to solve LOB application development.  This is the second part of dynamic prototyping.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Greg Leonardo" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V003" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Silverlight" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Lead Appllication Architect" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="26" Img="#26" Name="Introduction to SQL Server Statistics&#x9;">
+      <Description>Statistics are used by SQL Server to understand the distribution of data, which in turn helps it make a decision about which query plan to implement to get good query performance. You'll learn how stats are created and updated, how to maintain them, and ho</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Andy Warren" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J102" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="SQL Server" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="President" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="27" Img="#27" Name="Visual Studio 2010 SP1: What’s new for Web Developers&#x9;">
+      <Description>With the release of Visual Studio SP1 there is a bunch of goodness for web developers. In this talk we will take a look at what was released and how you can take advantage of it. Some of the topics that we will cover include: ASP.NET Web Pages (Razor), IIS</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Sayed Hashimi" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V107" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Visual Studio &amp; ALM" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Program Manager II" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="28" Img="#28" Name="NuGet, Microsoft ASP.Net MVC 3 and WebMatrix&#x9;">
+      <Description>In this session, we will discus NuGet - an open source .Net package manager for Visual Studio 2010 and Visual Web Developer 2010. We will create a sample NuGet package as well as demo how this valuable tool comes in handy in an ASP.Net MVC3 project and a M</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Sam Abraham" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="C110A" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Web" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Software Engineer/Architect" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T09:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T10:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="29" Img="#29" Name="Introduction to Azure AppFabric&#x9;&#x9;&#x9;">
+      <Description>In this presentation I would like to review the applications Azure AppFabric to the existing problems of the enterprise software companies and provide coding examples to explain the technology.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Alexander Koval" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="C110B" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Azure" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Software Architect" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="30" Img="#30" Name="Zero to Analytics-SharePoint Business Intelligence &#x9;">
+      <Description>Your boss is asking for it, come see what it will take to get him/her off your back! SharePoint BI, PerformancePoint, PowerPivot and reporting services in SharePoint. Come see how to tie it all together in this all demo session. We will build a solution in</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Adam Jorgensen" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V006" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Collaboration" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="President, Pragmatic Works" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="31" Img="#31" Name="Rapid Prototyping with SketchFlow in Expression Blend &#x9;&#x9;">
+      <Description>SketchFlow is a feature in Expression Blend 3 &amp; 4 that enables rapid prototyping of web sites and applications. SketchFlow helps designers, developers, information architects and account managers sketch, wireframe and prototype user experiences and user in</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Nikita Polyakov" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J101" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Design &amp; Animation" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="WP7 Dev MVP - AgileThought" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="32" Img="#32" Name="How to Build a Basic Website with DotNetNuke&#x9;">
+      <Description>Session attendees will learn how to build a basic business website in DotNetNuke using only core modules provided with the framework. Session attendees should have a basic understanding of online CMS systems and an interest in building websites.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Tony Valenti" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J104" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Administration" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="CEO" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="33" Img="#33" Name="Skinning 201 - Skinning DotNetNuke with Style&#x9;">
+      <Description>Throw away those tables for design! Making the change to CSS skinning can be difficult. This session will show you, it doesn't have to be. We will walk through taking a skin from a Photoshop file to a full DotNetNuke Skin. A basic understanding of DotNetNu</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Ralph Williams" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J104" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Design" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Front End Web Developer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="34" Img="#34" Name="Extreme DNN Development Techinques&#x9;&#x9;&#x9;">
+      <Description>Learn how to create modern Rich Internet Applications (RIA) using DNN as the core server framework using the OpenWebStudio middleware module. Learn to rethink your application experience concentrating on the clients hardware to improve scale, performance a</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Brad Schafer" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J105" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Development" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Owner" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="35" Img="#35" Name="Asynchronous Programming, Then and Now&#x9;">
+      <Description>In this session we will look at some of the evolution of asynchronous programming and how techniques have changed as new features are added to .NET. We will first start off at looking at event based asynchronous programming then graduate to callback based</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Jason Rainwater" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J108" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Fundamentals" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Consultant" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="36" Img="#36" Name="C# 4.0 Overview&#x9;">
+      <Description>The major theme for C# 4.0 is dynamic programming which provides a unified approach to performing certain operations dynamically while interacting with objects whose structure and behavior is not captured by a static type. This session will give a brief ov</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Prakash Balasubramanian" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J109" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Languages" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Software Development Engineer in Test" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="37" Img="#37" Name=".NET Parallel Programming Patterns&#x9;">
+      <Description>.NET 4.0 introduced new parallel programming support with the Task Parallel Library (TPL) and Parallel LINQ (PLINQ), commonly referred to collectively as the Parallel Extensions. The Parallel Extensions simplify the addition of parallelism and concurrency</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Scott Klueppel" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J112" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Patterns" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="38" Img="#38" Name="Machine Learning for .NET">
+      <Description>The purpose of this session is to demystify the central ideas behind pattern recognition and machine learning by demonstrating two key elements of the same: namely classification and clustering. Most developers shy away from such algorithms simply because</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Seth Juarez" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V101" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Services and More" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Technical Evangelist at DevExpress" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="39" Img="#39" Name="Silverlight and MVVM">
+      <Description>Q&amp;A Session on Silverlight and MVVM</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="John Papa" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J100" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Showcase" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Sr Technical Evangelist" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="40" Img="#40" Name="Introduction to SQL Server Profiler&#x9;">
+      <Description>Do you know what your preferred ORM tool is actually sending to SQL Server?  In this session you'll learn how to use Profiler to see what queries are really being sent to SQL Server and how they are performing.  We'll talk about what to events to capture,</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Jack Corbett" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J102" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="SQL Server" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="SQL Server DBA\Developer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="41" Img="#41" Name="Microsoft Visual Studio IDE Tips and Tricks&#x9;">
+      <Description>Learn how to become a Visual Studio coding guru! In this fast-paced session, learn to write code faster than a speeding bullet, leap around large projects in a single bound, and become more powerful than a locomotive with the debugger. We take a wild ride</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Sean Laberee" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V107" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Visual Studio &amp; ALM" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Senior Program Manager Lead" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="42" Img="#42" Name="Introduction to ASP.NET Dynamic Data&#x9;">
+      <Description>Dynamic Data is one of the best and undeservingly forgotten new features of ASP.NET 4.0. Have you looked at Dynamic Data in its initial release and decided it was too limited, too complex or could only be used for simple screens? Think again! Dynamic Data</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Oleg Sych" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="C110A" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Web" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Senior Consultant" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="43" Img="#43" Name="Work From Anywhere = WFA (Part 2)&#x9;">
+      <Description>I’m proposing a new TLA or three letter acronym, “WFA” or Work From Anywhere.  The three ingredients, Windows Phone 7, Azure and Facebook provide you, the individual developer, the necessary components to create highly profitable, highly scalable applicati</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Kevin Wolf" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J100" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="WP7" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Phone Dev MVP" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T11:00:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T12:00:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="44" Img="#44" Name="Building Causal Games on Azure &#x9;&#x9;&#x9;">
+      <Description>One of the fastest-growing cloud segments, casual gaming spans all age groups and regions of the world. Examine the architecture of one example of a casual gaming cloud app, review the common event logic used, learn how to add in-app purchasing and ways bu</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Jason Milgram" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="C110B" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Azure" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="CEO" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="45" Img="#45" Name="Do It Yourself Microsoft Office&#x9;">
+      <Description>This session explores using the Microsoft OpenXML toolkit to create and update Microsoft Office 2007/2010 compatible documents without having Office installed.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Colin Blakey" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V006" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Collaboration" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="46" Img="#46" Name="Being a Designer in a Developer's World&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;">
+      <Description>Bridge the gap between PSD and Code. How can designers prepare for an expandable product? What steps can developers take towards a beautiful solution? Find out ways to communicate between two very different sides of the brain.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Konrad Neumann" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J101" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Design &amp; Animation" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Graphic Designer &amp; Web Developer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="47" Img="#47" Name="Using Third Party Modules as a Framework">
+      <Description>A major advantage to the DotNetNuke community is the amount of third party modules available.  These range from free add-ons to complex vendor created solutions.  When used correctly, these modules can save a ton of development time and cost.  Unfortunatel</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Nick Christy" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J104" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Administration" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="VP of Technology" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="48" Img="#48" Name="Search Engine Friendly DNN Menus using Telerik (For Free)">
+      <Description>SEO conscious skin developers know that the core DNN menu is not the best solution for getting your pages indexed. In this session, we will cover the basics of what you need to know to start using the Telerik RadMenu in your DotNetNuke skins. You will lear</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Jeff Fischer" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J104" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Design" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Web Developer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="49" Img="#49" Name="DotNetNuke Performance: Diagnosing Problems&#x9;">
+      <Description>This session is geared towards performance diagnostics and tips and tricks to properly isolate and resolve the issues.  A systematic approach is discussed focusing on the methods possible to quickly identify and eventually resolve issues that may come up,</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Mitchel Sellers" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J105" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Development" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="CEO/Director of Development" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="50" Img="#50" Name="The Basics of Developing for the Web for Windows Developers&#x9;">
+      <Description>Are you new to developing for the web? This session is for you! Many developers start developing for the web without looking at how it differs from developing for client software. We will all the moving parts of developing for the web from what HTTP is to</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Woody Pewitt" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J108" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Fundamentals" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Technical Evangelist" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="51" Img="#51" Name="Functional C#&#x9;">
+      <Description>This session will delve into the functional underpinnings that were introduced in C# 1.0 and show how they have evolved to produce some incredibly interesting constructs that can make your C# code more powerful and concise.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Seth Juarez" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J109" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Languages" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Technical Evangelist at DevExpress" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="52" Img="#52" Name="The Flexible Distributed Business Layer&#x9;">
+      <Description>By harnessing SOA patterns, WCF’s Discovery capabilities, and Work Flows, the business layer becomes a strategic asset to your IT organization.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Page Horton" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J112" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Patterns" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Architect" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="53" Img="#53" Name="Demystyfying Windows Communication Foundation 4.0&#x9;">
+      <Description>Windows Communication Foundation (WCF) has gone through two major releases and is now ready for prime time but many enterprise developers are still holding onto ASMX web services. In this session we are going to learn why moving to WCF is a good thing and</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Keith Elder" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V101" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Services and More" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Director of Software Engineering" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="54" Img="#54" Name="Intro to MVC 3&#x9;">
+      <Description>In this talk we will discuss the new Razor engine, the WebGrid, and the improvments in validation.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Ken Tucker" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J100" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Showcase" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="55" Img="#55" Name="Using Silverlight with Prism 4 to build Enterprise MVVM Applications&#x9;">
+      <Description>In this session I will  explore the benefits of using Prism to build Testable and extendable MVVM Silverlight applications. I will talk about how Prism 4 facilitates Dependency injection and how we will use it to build Extendable Applications. I will also</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Cornelius Kruger" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V003" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Silverlight" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Senior Consultant" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="56" Img="#56" Name="SQL 2008 geo data on a Window Phone 7 Bing Map&#x9;">
+      <Description>A walk through of SQL 2008 geographic data type and how to manipulate and retrieve data based on geographic location.  We will then create a mapping solution in ASP.net, Silverlight and Windows Phone 7.  After the session the attendees will be comfortable</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Michael Stark" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J102" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="SQL Server" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value=".Net Developer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="57" Img="#57" Name="Web Deploy: Seriously You’re Still not Using This?&#x9;">
+      <Description>If you typically deploy your web applications using Windows Explorer and Aero Snap, please stop. Come see a practical session on the new deployment goodness in Microsoft Visual Studio 2010 and .NET Framework 4. We dig into Web Deploy (a.k.a. MSDeploy) and</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Sayed Hashimi" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V107" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Visual Studio &amp; ALM" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Program Manager II" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="58" Img="#58" Name="Consuming Services in Windows Phone 7&#x9;">
+      <Description>Explore consuming REST, ODATA, JSON, ATOM, RSS and SOAP services using built in phone mechanisms like HttpWebRequest and WebClient.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Joe Healy" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J100" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="WP7" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Developer Evangelist" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T13:30:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T14:30:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="59" Img="#59" Name="Continuous Deployment on Azure &#x9;&#x9;&#x9;">
+      <Description>Love Windows Azure but tired of waiting for your instances spin to life?  We were too and decided to solve the continuous deployment issue on Azure.  .NET has all the tools you need to solve this problem and we'll show you how.  One part MSBuild, two parts</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Mike Potts" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="C110B" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Azure" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Principal" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="60" Img="#60" Name="Client Object Model Data Access for Silverlight on SharePoint 2010&#x9;">
+      <Description>This session will focus on the Client Object Model managed client API for Silverlight. In the session, we will review the three methods for using and managing list data from SharePoint 2010 in Silverlight. The three methods discussed include REST services,</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Ryan M" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V006" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Collaboration" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Managing Partner" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="61" Img="#61" Name="Building Social Communities with DotNetNuke&#x9;">
+      <Description>How can you make your site more "social"? Do you want to improve communication with your customers? Would you like to add more capabilities to your existing community? Are social tools a good fit for your site, your users and for you? We will look at what</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Will Morgenweck" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J104" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Administration" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Owner" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="62" Img="#62" Name="Intro to DNN SEO&#x9;">
+      <Description>Database-driven websites and content management systems such as DNN are traditionally labeled as "hard to optimize" or "outright bad" for search engines by many “SEO experts.” Don’t believe the hype! Explore how the basics of on-page search engine optimiza</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Tom Kraak" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J104" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Design" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="SEO Analyst" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="63" Img="#63" Name="DNN in a Web Farm&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;">
+      <Description>The most common mistake that large enterprises make when deploying DotNetNuke is not planning for a webfarm environment. Most applications are developed and tested within a single server DotNetNuke instance. Most stress testing isn’t done until the site ha</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Nick Christy" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J105" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Development" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="VP of Technology" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="64" Img="#64" Name="Modern Web Concepts&#x9;">
+      <Description>In this session, I'll share my thoughts and process to creating web sites and apps. It will be frontend centric, as that is my area of expertise, and be more about concepts than code sharing. My goal is to promote some "best practices" that will help you m</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Ryan Parsley" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J108" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Fundamentals" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Creative Director" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="65" Img="#65" Name="Using C# as a Scripting Language&#x9;">
+      <Description>Many developers are surprised to learn that C# can be used as a scripting language, despite being a strongly-typed language.  During this presentation walk through an open-source C# scripting host, and see how it can be embedded in an application to provid</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Zachary Gramana" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J109" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Languages" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Software Engineer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="66" Img="#66" Name="Fluent Interfaces in C# &amp; VB: What, Why &amp; How&#x9;">
+      <Description>Fluent APIs aren't just for third party libraries -- creating and consuming them as internal domain-specific languages can make your code more expressive and readable, while reducing defects. This session will go beyond method chaining to explore the nuanc</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Jay Hill" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J112" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Patterns" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="67" Img="#67" Name="Chat Application Using Push Notification with Windows Phone 7">
+      <Description>Come and learn all about Push Notifications. The basics, the different types, the architecture, and how to send notifications. We will close the session by demoing push notifications using a chat application.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Jonas Stawski" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V101" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Services and More" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="68" Img="#68" Name="Design for Developers: Bad Design Kills Good Projects&#x9;&#x9;&#x9;">
+      <Description>Stumped with what to do with that annoying V thing in MVVM, MVP, etc? Familiar with all the acronyms, but don’t grok UI? This session is for you. In this guided tour into the World of Visual Designers, we’ll go over the elements of art and design, demystif</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Diane Leeper" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J101" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Showcase" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Creative Alchemist" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="69" Img="#69" Name="Connecting the Dots: how to build a real-world Silverlight app&#x9;">
+      <Description>Learning all the ins-and-outs of how to set up your Silverlight project so that you can actually solve a real-world business problem just isn't easy. This Session is all about connecting the dots between your business, data, web services, website, and Silv</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Michael Knopf" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V003" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Silverlight" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Principal Software Developer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="70" Img="#70" Name="Zen and the Art of Writing SQL Query &#x9;">
+      <Description>Writing a query is an art! Simplicity, focus, and practice is all it takes. Understand the logical processing of a query and discover the art of writing simple and efficient queries. It is a journey that starts with FROM and ends with ORDER BY!</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Plamen Ratchev" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J102" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="SQL Server" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="71" Img="#71" Name="Continous Integration with TFS 2010&#x9;">
+      <Description>Learn the Ins and Outs of TFS Team Build, starting with Build Controllers and Agents and then all the way through to the new Workflow-based templates.  We will go over how to create custom activities, and much more in order to take full advantage of TFS's</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Esteban Garcia" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V107" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Visual Studio &amp; ALM" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Principal Consultant" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="72" Img="#72" Name="Introduction to Facebook Development&#x9;">
+      <Description>This session will show you how to create a simple Facebook iFrame application using the Facebook C# SDK. No previous Facebook development experience is required. This session will demonstrate how to quickly get started setting up your application and how t</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Nathan Totten" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="C110A" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Web" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Sr. Software Developer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="73" Img="#73" Name="WP7 Marketplace Place and Monetization&#x9;">
+      <Description>Details of Windows Phone Marketplace and using Microsoft Advertising SDK control. Monetization strategies, rules and tips for making the best out of your post writing the Windows Phone app experience. Many speakers end up hanging out in the back and this s</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Nikita Polyakov" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J100" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="WP7" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="WP7 Dev MVP - AgileThought" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T14:40:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T15:40:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="74" Img="#74" Name="Using Lucene.net on Azure&#x9;&#x9;&#x9;&#x9;">
+      <Description>Lucene &amp; Lucene.net has always been open about requiring the developer to address his/her own data gathering indexing grunt work as well as storing and maintaining those indices.  Come find out how to deal with these issues on the Azure platform.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Tim Butts" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="C110B" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Azure" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Sr Engineer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="75" Img="#75" Name="Provisioning Lync Server 2010 using PowerShell&#x9;">
+      <Description>This session will show the attended how to administer Lync using the Lync Server PowerShell cmdlets. It will detail the steps needed for creating organizations and users then provisioning them so that they can use Lync</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Marshall Harrison" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V006" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Collaboration" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Sr. Microsoft Platform Developer" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="76" Img="#76" Name="Windows Phone 7 Animation&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;">
+      <Description>To bring that “Wow” factor into Windows Phone 7 you need animation elements incorporated into the application. You will learn about the basics of animations like matrix theory, easing functions, the use of transparency, character animations, transitions, a</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Henry Lee" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J101" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Design &amp; Animation" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="President" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="77" Img="#77" Name="Take This Job And Shove It: How to start a DNN company&#x9;">
+      <Description>Are you tired?  Tired of commuting... tired of co-workers, over bearing bosses, exhausting your efforts for little reward or recognition, missing the kids getting off the bus?  Join Gifford Watkins (Founder of DotNetNuke Nova Scotia User Group and Atlantic</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Gifford Watkins" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J104" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Administration" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Founder Atlantic Webfitters" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="78" Img="#78" Name="DNN Relaunch SEO">
+      <Description>As the popularity of DNN has grown, converting existing websites to the DotNetNuke platform is a common practice. In this session I would like to provide a few pointers on how to make such conversions a success in regards to organic search engine optimizat</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Tom Kraak" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J104" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Design" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="SEO Analyst" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="79" Img="#79" Name="To the Cloud: DotNetNuke and Windows Azure&#x9;">
+      <Description>Have you ever wondered what all the excitement is around cloud services? Do you want to know how you can use Windows Azure to improve your own DotNetNuke website? In this session we'll look at some of the fundamental building blocks of Windows Azure.  You'</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Joe Brinkman" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J105" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="DNN Development" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Co-Founder" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="80" Img="#80" Name="Advanced ASP.NET Debugging and Troubleshooting&#x9;">
+      <Description>In this expert-level session attendees will learn how to use advanced debugging and troubleshooting tools for .NET.  We will explore profiling, stack tracing, packet tracing, reverse compiling and more while we demonstrate how to diagnose a performance pro</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Tony Valenti" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J108" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Fundamentals" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="CEO" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="81" Img="#81" Name="Intro to .NET Micro Framework And the ChipworkX Development System">
+      <Description>The .NET Micro Framework is .NET for small and resource constrained devices. It offers a complete and innovative development and execution environment that brings the productivity of modern computing tools to this class of devices.  ChipworkX Development S</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Brad Foley" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J109" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Languages" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Mr." />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="82" Img="#82" Name="Introduction to Reactive Extensions (Rx.NET) for Windows Phone 7 and the .NET Framework&#x9;">
+      <Description>Reactive Extensions for .NET is a new library for making asynchronous and event-based programming easier both on Windows Phone 7 and on the full version of the .NET framework. Learn the basics of this new library to start building powerful async/event-proc</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Eugene Chuvyrov" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J112" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Patterns" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Independent Software Consultant" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="83" Img="#83" Name="Configurable Apps with the .NET 4 Workflow Foundation&#x9;">
+      <Description>Windows Workflow Foundation (WF) is a declarative, visual way to express business logic.  It's also a powerful tool for creating apps that can be user customized in a controlled environment.  Microsoft rewrote WF 4 from the ground up--it's fast and clean.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Patrick Rourke" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V101" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Services and More" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="CTO" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="84" Img="#84" Name="Meet the Visual Studio Team">
+      <Description>Q&amp;A with the Visual Studio Team</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Spotty Bowles" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J104" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Showcase" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Visual Basic Language Features in 2010" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="85" Img="#85" Name="Silverlight for Line of Business ..Case study&#x9;">
+      <Description>I have done a few Code Camp talks on why Silverlight is a great platform for developing business applications. This talk is a case study on the actual delivery of a such a product, IXReveal’s uReveal Pro that uses Silverlight for the delivery of a stunning</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="John  Mcfetridge" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V003" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Silverlight" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="architect" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="86" Img="#86" Name="Using SQL Server Compact Edition in a .NET application&#x9;">
+      <Description>When you have projects that need a database, but don't need the overhead of SQL Server (Express</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Walter Williams" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J102" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="SQL Server" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="Owner" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="87" Img="#87" Name="Application Lifecycle Management using Visual Studio 2010&#x9;">
+      <Description>Walkthrough of Application lifecycle management (ALM), benefits, disadvantages, categories of ALM, discussion of various ALM tools including VS 2010.</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Jyoti Chawla" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="V107" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="100" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Visual Studio &amp; ALM" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="SPL" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="88" Img="#88" Name="Unified Web and Mobile Web Applications with ASP.NET MVC 3 and jQuery Mobile&#x9;">
+      <Description>Overview: To get ready for the Mobile/Tablet revolution this is a must see presentation. Develop Unified Web Applications for desktop browsers, Mobile and Tablet devices using MVC 3 and jQuery Mobile. The results are so realistic, users won't distinguish t</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Ivan Farkas" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="C110A" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="300" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="Web" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+    <Item Id="89" Img="#89" Name="Making (More) Money with Phone 7&#x9;">
+      <Description>When you get your app running… and even more so when published… you are most likely feeling pretty good and on cloud 9. It feels great, doesn’t it? Here are a few suggestions to make you feel even better. Of course, more work is needed. Getting your app no</Description>
+      <Facets>
+        <Facet Name="Speaker">
+          <String Value="Russell Fustino" />
+        </Facet>
+        <Facet Name="Room">
+          <String Value="J100" />
+        </Facet>
+        <Facet Name="Level">
+          <Number Value="200" />
+        </Facet>
+        <Facet Name="Track">
+          <String Value="WP7" />
+        </Facet>
+        <Facet Name="Position">
+          <String Value="President" />
+        </Facet>
+        <Facet Name="Start">
+          <DateTime Value="2011-03-26T15:50:00" />
+        </Facet>
+        <Facet Name="End">
+          <DateTime Value="2011-03-26T16:50:00" />
+        </Facet>
+      </Facets>
+    </Item>
+  </Items>
+  <Extension>
+    <p:Copyright Name="Copyright © 2011, Orlando .Net User Group" />
+  </Extension>
+</Collection>

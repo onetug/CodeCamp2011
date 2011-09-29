@@ -1,0 +1,112 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="CodeCamp.WP7.AgendaItemPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="DarkOliveGreen">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="CodeCamp.png" Grid.Row="0" Margin="5"/>
+
+        <controls:Pivot Grid.Row="1" Margin="0,-20,0,0">
+
+            <controls:PivotItem Header="feedback">
+                
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <StackPanel>
+                        
+                        <TextBlock Text="Rating" Style="{StaticResource PhoneTextLargeStyle}" />
+                    
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton Content="1" IsChecked="{Binding Rating1, Mode=TwoWay}"/>
+                            <RadioButton Content="2" IsChecked="{Binding Rating2, Mode=TwoWay}"/>
+                            <RadioButton Content="3" IsChecked="{Binding Rating3, Mode=TwoWay}"/>
+                            <RadioButton Content="4" IsChecked="{Binding Rating4, Mode=TwoWay}"/>
+                            <RadioButton Content="5" IsChecked="{Binding Rating5, Mode=TwoWay}"/>
+                        </StackPanel>
+
+                        <TextBlock Text="Comment" Style="{StaticResource PhoneTextLargeStyle}" />
+
+                        <TextBox AcceptsReturn="True" Height="267" Text="{Binding Comment, Mode=TwoWay}"/>
+
+                    </StackPanel>
+
+                    <Button x:Name="Submit" Grid.Row="1" Content="Submit" Click="Submit_Click"/>
+                    
+                </Grid>
+                
+            </controls:PivotItem>
+
+            <controls:PivotItem Header="session">
+
+                <ScrollViewer>
+
+                    <StackPanel>
+
+                        <TextBlock Text="title" Style="{StaticResource PhoneTextLargeStyle}"/>
+                        <TextBlock Text="{Binding Path=Session.Title}" Style="{StaticResource PhoneTextSubtleStyle}" TextWrapping="Wrap"/>
+
+                        <TextBlock Text="time" Style="{StaticResource PhoneTextLargeStyle}" Margin="12,12,0,0"/>
+                        <TextBlock Text="{Binding Path=Session.Time}" Style="{StaticResource PhoneTextSubtleStyle}"/>
+
+                        <TextBlock Text="level" Style="{StaticResource PhoneTextLargeStyle}" Margin="12,12,0,0"/>
+                        <TextBlock Text="{Binding Path=Session.Level}" Style="{StaticResource PhoneTextSubtleStyle}"/>
+
+                        <TextBlock Text="description" Style="{StaticResource PhoneTextLargeStyle}" Margin="12,12,0,0"/>
+                        <TextBlock Text="{Binding Path=Session.Description}" Style="{StaticResource PhoneTextSubtleStyle}" TextWrapping="Wrap"/>
+
+                    </StackPanel>
+
+                </ScrollViewer>
+
+            </controls:PivotItem>
+        
+            <controls:PivotItem Header="speaker">
+
+                <ScrollViewer>
+
+                    <StackPanel>
+
+                        <TextBlock Text="{Binding Path=Speaker.Name}" Style="{StaticResource PhoneTextLargeStyle}"/>
+                        <TextBlock Text="{Binding Path=Speaker.Title}" Style="{StaticResource PhoneTextSubtleStyle}"/>
+
+                        <TextBlock Text="twitter" Style="{StaticResource PhoneTextLargeStyle}" Margin="12,12,0,0"/>
+                        <TextBlock Text="{Binding Path=Speaker.Twitter}" Style="{StaticResource PhoneTextSubtleStyle}"/>
+
+                        <TextBlock Text="blog" Style="{StaticResource PhoneTextLargeStyle}" Margin="12,12,0,0"/>
+                        <TextBlock Text="{Binding Path=Speaker.Blog}" Style="{StaticResource PhoneTextSubtleStyle}"/>
+
+                        <TextBlock Text="bio" Style="{StaticResource PhoneTextLargeStyle}" Margin="12,12,0,0"/>
+                        <TextBlock Text="{Binding Path=Speaker.Bio}" Style="{StaticResource PhoneTextSubtleStyle}" TextWrapping="Wrap"/>
+
+                    </StackPanel>
+
+                </ScrollViewer>
+
+            </controls:PivotItem>
+
+        </controls:Pivot>
+        
+    </Grid>
+    
+</phone:PhoneApplicationPage>

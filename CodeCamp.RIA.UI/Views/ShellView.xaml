@@ -1,0 +1,76 @@
+﻿<UserControl 
+  x:Class="CodeCamp.RIA.UI.Views.ShellView"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation" 
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+  xmlns:controls="clr-namespace:CodeCamp.RIA.UI.Controls" 
+  xmlns:mef="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro" xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="480">
+    <controls:BusyIndicatorEx x:Name="BusyIndicator" BusyContent="{Binding BusyMessage, Mode=OneWay}"  
+                                      IsBusy="{Binding IsBusy, Mode=OneWay}" Visibility="Visible" >
+        <Grid>
+            <controls:TiledBackground SourceUri="/CodeCamp.RIA.UI;component/Images/backgroundtexture.png"/>
+            <Image Source="/CodeCamp.RIA.UI;component/Images/backgroundshadow.png" Stretch="Fill"/>
+            <Border x:Name="BackgroundBorder" Style="{StaticResource BackgroundBorderStyle}" />
+            <Border x:Name="LinksBorder" Style="{StaticResource NavLinksBorderStyle}" />
+            <Grid x:Name="LayoutRoot" Style="{StaticResource LayoutRootGridStyle}" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid HorizontalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Width="Auto" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                            <Image Source="../Images/CodeCamp.png" Height="37" Margin="0,0,20,0"/>
+                    </StackPanel>
+                    <StackPanel x:Name="LinksStackPanel" Grid.Column="1" Style="{StaticResource LinksStackPanelStyle}" Margin="0,0,0,0" VerticalAlignment="Top">
+                        <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/AgendaView" TargetName="ContentFrame" Content="Attend" />
+                        <!--<Rectangle x:Name="Divider1" Style="{StaticResource DividerStyle}"/>-->
+                        <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/SpeakerView" TargetName="ContentFrame" Content="Present" />
+                        <!--<Rectangle x:Name="Divider4" Style="{StaticResource DividerStyle}"/>-->
+                        <!--<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/VolunteerView" TargetName="ContentFrame" Content="Volunteer" />-->
+                        <!--<Rectangle x:Name="Divider6" Style="{StaticResource DividerStyle}"/>-->
+                        <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/ProfileView" TargetName="ContentFrame" Content="Preferences" />
+                        <!--<Rectangle x:Name="Divider5" Style="{StaticResource DividerStyle}"/>-->
+                        <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/SponsorView" TargetName="ContentFrame" Content="Sponsors" />
+                        <!--<Rectangle x:Name="Divider2" Style="{StaticResource DividerStyle}"/>-->
+                        <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/AboutView" TargetName="ContentFrame" Content="About" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="2" HorizontalAlignment="Right" Margin="0,10,10,0" Width="Auto">
+                        <Ellipse x:Name="ProfileInComplete" Fill="Red" Height="12" Width="12" StrokeThickness="2" Stroke="Yellow" Margin="0,0,15,20" VerticalAlignment="Center"
+                                 Visibility="{Binding ProfileInComplete, Mode=TwoWay, Converter={StaticResource BoolToVisibilityConverter}}"
+                                 ToolTipService.ToolTip="Please choose your preferences for this event." ToolTipService.Placement="Bottom">
+                        </Ellipse>
+
+                        <TextBlock x:Name="UserWelcome" Text=""  
+                                   Foreground="{StaticResource InputSelectionBrush}" FontFamily="{StaticResource ContentFontFamily}" 
+                                   FontSize="{StaticResource Heading5FontSize}" FontWeight="Bold"/>
+                    </StackPanel>
+                </Grid>
+                    <Border x:Name="ContentBorder" Style="{StaticResource NavContentBorderStyle}" Grid.Row="2" Margin="0" Padding="0">
+                        <navigation:Frame x:Name="ContentFrame" Style="{StaticResource ContentFrameStyle}" 
+                                  Source="/AgendaView" Navigated="ContentFrame_Navigated" NavigationFailed="ContentFrame_NavigationFailed">
+                            <navigation:Frame.ContentLoader>
+                                <mef:MEFContentLoader />
+                            </navigation:Frame.ContentLoader>
+                        </navigation:Frame>
+                    </Border>
+                    <!--ContentFrame had this, but performance suffered - Template="{StaticResource TransitioningFrame}"-->
+            </Grid>
+            <TextBlock Margin="2" Text="Copyright © 2011, Orlando .Net User Group - All Rights Reserved" 
+                           HorizontalAlignment="Center" Grid.Row="3"
+                           VerticalAlignment="Bottom"
+                            Visibility="Collapsed"/>
+        </Grid>
+    </controls:BusyIndicatorEx>
+</UserControl>

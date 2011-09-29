@@ -1,0 +1,164 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="CodeCamp.WP7.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768" 
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="DarkOliveGreen">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Image Source="CodeCamp.png" Grid.Row="0" Margin="5"/>
+        
+        <controls:Pivot Grid.Row="1" Margin="0,-20,0,0" x:Name="Carousel" SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}">
+            
+            <!--<controls:PivotItem Header="info" Visibility="Collapsed">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel>
+
+                        <TextBlock Text="what" Style="{StaticResource PhoneTextLargeStyle}"/>
+
+                        <TextBlock Style="{StaticResource PhoneTextSubtleStyle}">
+                            
+                            Full day of coding and fun!
+                            <LineBreak/>
+                            50 Speakers, 20 MVPs, 80 Sessions
+                            <LineBreak/>
+                            New this year: A Day of DNN
+                            <LineBreak/>
+                            Price: FREE (Registration required)
+                            <LineBreak/>
+                            
+                        </TextBlock>
+                        
+                        <TextBlock Text="when" Style="{StaticResource PhoneTextLargeStyle}"/>
+
+                        <TextBlock Style="{StaticResource PhoneTextSubtleStyle}">
+                            
+                            March 26, 2011
+                            <LineBreak/>
+                            Registration: 8:00 AM
+                            <LineBreak/>
+                            Sessions: 8:30 AM - 5:00 PM
+                            <LineBreak/>
+                            After party: 6:00 PM
+                            <LineBreak/>
+
+                        </TextBlock>
+
+                        <TextBlock Text="where" Style="{StaticResource PhoneTextLargeStyle}"/>
+                        
+                        <TextBlock Style="{StaticResource PhoneTextSubtleStyle}">
+                            
+                            Seminole State College
+                            <LineBreak/>
+                            100 Weldon Blvd.
+                            <LineBreak/>
+                            Sanford, FL 32773
+                            <LineBreak/>
+
+                        </TextBlock>
+                        
+                    </StackPanel>
+
+                </Grid>
+
+            </controls:PivotItem>-->            
+
+            <controls:PivotItem Header="login">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel>
+
+                        <TextBlock Text="E-mail" Margin="12,0,0,0"/>
+                        <TextBox x:Name="Email" Text="{Binding Email, Mode=TwoWay}"/>
+
+                        <TextBlock Text="Password" Margin="12,0,0,0"/>
+                        <PasswordBox x:Name="Password" Password="{Binding Password, Mode=TwoWay}" />
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1">
+                    
+                        <Button x:Name="Login" Content="Login" Click="Login_Click"/>
+
+                        <Button x:Name="Refresh" Content="Refresh" Click="Refresh_Click"/>
+
+                    </StackPanel>
+                </Grid>
+
+            </controls:PivotItem>
+ 
+            <controls:PivotItem Header="agenda" Visibility="{Binding ShowAgenda}" x:Name="AgendaTab"> 
+
+                <ListBox x:Name="Agenda" Margin="0,0,-12,0" ItemsSource="{Binding Agenda}" SelectionChanged="Agenda_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,17">
+                                <TextBlock Text="{Binding Title}" TextWrapping="NoWrap" Margin="12,0,0,0" Style="{StaticResource PhoneTextLargeStyle}"/>
+                                <TextBlock Text="{Binding Summary}" TextWrapping="NoWrap" Margin="12,-6,0,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                
+            </controls:PivotItem>
+            
+            <controls:PivotItem Header="tracks">
+
+                <ListBox x:Name="Tracks" Margin="0,0,-12,0" ItemsSource="{Binding Tracks}" SelectionChanged="Tracks_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,17">
+                                <TextBlock Text="{Binding Name}" TextWrapping="NoWrap" Margin="12,0,0,0" Style="{StaticResource PhoneTextLargeStyle}"/>
+                                <TextBlock Text="{Binding Summary}" TextWrapping="NoWrap" Margin="12,-6,0,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+            </controls:PivotItem>
+
+            <controls:PivotItem Header="speakers">
+
+                <ListBox x:Name="Speakers" Margin="0,0,-12,0" ItemsSource="{Binding Speakers}" SelectionChanged="Speakers_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,17">
+                                <TextBlock Text="{Binding Name}" TextWrapping="NoWrap" Margin="12,0,0,0" Style="{StaticResource PhoneTextLargeStyle}"/>
+                                <TextBlock Text="{Binding Title}" TextWrapping="NoWrap" Margin="12,-6,0,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+            </controls:PivotItem>
+
+        </controls:Pivot>
+    </Grid>
+
+</phone:PhoneApplicationPage>

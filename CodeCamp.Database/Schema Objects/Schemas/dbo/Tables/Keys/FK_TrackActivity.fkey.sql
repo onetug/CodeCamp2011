@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[Sessions]
+    ADD CONSTRAINT [FK_TrackActivity] FOREIGN KEY ([TrackId]) REFERENCES [dbo].[Tracks] ([Id]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+

@@ -1,0 +1,324 @@
+﻿<navigation:Page 
+  x:Class="CodeCamp.RIA.UI.Views.VolunteerView" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    mc:Ignorable="d"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+    d:DesignWidth="800" d:DesignHeight="480" Style="{StaticResource PageStyle}"
+    xmlns:infra="clr-namespace:CodeCamp.RIA.UI.Infrastructure;assembly=CodeCamp.RIA.UI.Infrastructure" xmlns:Controls="clr-namespace:CodeCamp.RIA.UI.Controls" xmlns:Micro="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro" xmlns:views="clr-namespace:CodeCamp.RIA.UI.Views">
+
+    <navigation:Page.Resources>
+        <infra:DateTimeConverter x:Key="DateConverter" />
+        
+        <DataTemplate x:Key="TaskListItemTemplate">
+            <StackPanel Orientation="Vertical" Background="OrangeRed" Width="287">
+                <StackPanel Orientation="Horizontal" Background="{StaticResource OverlayBrush}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+
+                        </Grid.RowDefinitions>
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60" />
+                            <ColumnDefinition Width="102" />
+                            <ColumnDefinition Width="62" />
+                            <ColumnDefinition Width="75" />
+                        
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Name="Name" Grid.Row="0" Grid.ColumnSpan="4" 
+                                   Text="{Binding Name,  Mode=OneWay}" 
+                                   Height="Auto" Margin="2,2,2,2" Foreground="White" FontWeight="ExtraBold"
+                                   Style="{StaticResource ContentTextStyle}" 
+                                   HorizontalAlignment="Left" />
+                        <StackPanel Orientation="Horizontal" Margin="2,0,0,0" Grid.Row="1" Grid.ColumnSpan="3">
+                            <!--<TextBlock Grid.Row="1" Grid.Column="0"
+                                       Text="Start:" 
+                                       Height="Auto" Margin="2,0,0,0" Foreground="White" FontWeight="ExtraBold"
+                                       Style="{StaticResource ContentTextStyle}" 
+                                       HorizontalAlignment="Left"/>-->
+
+                            <TextBlock 
+                                       Text="{Binding Mode=OneWay, Path=StartTime, StringFormat=\{0:t\}}" 
+                                       Height="Auto" Margin="2,0,0,0" Foreground="White" FontWeight="ExtraBold"
+                                       Style="{StaticResource ContentTextStyle}" 
+                                       HorizontalAlignment="Left"/>
+                            <TextBlock Text=" - " Height="Auto" Margin="2,0,0,0" Foreground="White" FontWeight="ExtraBold"
+                                       Style="{StaticResource ContentTextStyle}" 
+                                       HorizontalAlignment="Left"/>
+                            <!--<TextBlock Grid.Row="2" Grid.Column="0"
+                                       Text="End: " 
+                                       Height="Auto" Margin="2,0,0,0" Foreground="White" FontWeight="ExtraBold"
+                                       Style="{StaticResource ContentTextStyle}" 
+                                       HorizontalAlignment="Left" />-->
+
+                            <TextBlock 
+                                       Text="{Binding Mode=OneWay, Path=EndTime, StringFormat=\{0:t\}}"
+                                       Height="Auto" Margin="2,0,0,0" Foreground="White" FontWeight="ExtraBold"
+                                       Style="{StaticResource ContentTextStyle}" 
+                                       HorizontalAlignment="Left" />
+                        </StackPanel>
+                        <toolkit:Expander Name="expander1" ExpandDirection="Down" 
+                                          Header="What you'll be doing..." Height="Auto"  Foreground="White"
+                                          Grid.Row="2" Grid.ColumnSpan="4" Margin="2,0,0,2"  >
+                            <TextBlock TextWrapping="Wrap" Text="{Binding Description, Mode=TwoWay}" Width="290"
+                                       Height="Auto" Foreground="White" FontWeight="ExtraBold"
+                                   Style="{StaticResource ContentTextStyle}" 
+                                   HorizontalAlignment="Left"/>
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Expanded">
+                                    <Micro:ActionMessage MethodName="ExpandAvailable" >
+                                        <Micro:Parameter Value="{Binding ElementName=Name, Path=Text}" />
+                                    </Micro:ActionMessage>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </toolkit:Expander>
+                        <!--<Rectangle Grid.Column="4" Grid.Row="1" Grid.RowSpan="2" 
+                                   Width="55" Height="55"
+                                   HorizontalAlignment="Left"
+                                   Margin="7,7,3,4">
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource=""/>
+                            </Rectangle.Fill>
+                            
+                        </Rectangle>-->
+                        <!--<Image Grid.Column="3" Grid.Row="1" Grid.RowSpan="2"  
+                               HorizontalAlignment="Right" 
+                               Source="../Images/Pencil3-32.png"
+                               Margin="7,7,7,4"
+                               Height="55" />
+
+                        <Rectangle Width="160" Height="120"
+                            Stroke="Black"
+                            StrokeThickness="1">
+                                <Rectangle.Fill>
+                                       <ImageBrush ImageSource="kauai.jpg" />
+                                </Rectangle.Fill>
+                        </Rectangle>-->
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+                <!--<StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Start Time:" Height="Auto" Margin="2,0,0,0" Foreground="Black"
+                               Style="{StaticResource ContentTextStyle}" HorizontalAlignment="Stretch" TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding StartTime,  Mode=OneWay}" Height="Auto" Margin="2,0,0,0" Foreground="Black"
+                               Style="{StaticResource ContentTextStyle}" HorizontalAlignment="Stretch" TextWrapping="Wrap"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="End Time:" Height="Auto" Margin="2,0,0,0" Foreground="Black"
+                               Style="{StaticResource ContentTextStyle}" HorizontalAlignment="Stretch" TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding EndTime,  Mode=OneWay}"  Height="Auto" Margin="2,0,0,0" Foreground="Black"
+                               Style="{StaticResource ContentTextStyle}" HorizontalAlignment="Stretch" TextWrapping="Wrap"/>
+                </StackPanel>-->
+        </DataTemplate>
+
+        <DataTemplate x:Key="VolunteerListItemTemplate">
+            <StackPanel Orientation="Vertical" Background="{StaticResource ColorAccentSolidBrush}" Width="287">
+                <StackPanel Orientation="Horizontal" Background="{StaticResource OverlayBrush}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60" />
+                            <ColumnDefinition Width="102" />
+                            <ColumnDefinition Width="62" />
+                            <ColumnDefinition Width="75" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Name="Name" Grid.Row="0" Grid.ColumnSpan="4" 
+                                   Text="{Binding Name,  Mode=OneWay}" 
+                                   Height="Auto" Margin="2,2,2,2" Foreground="White" FontWeight="ExtraBold"
+                                   Style="{StaticResource ContentTextStyle}" 
+                                   HorizontalAlignment="Left" />
+
+                        <!--<TextBlock Grid.Row="1" Grid.ColumnSpan="3" 
+                                   Text="{Binding Description,  Mode=OneWay}" 
+                                   Height="Auto" Margin="2,2,2,2" Foreground="White" FontWeight="ExtraBold"
+                                   Style="{StaticResource ContentTextStyle}" 
+                                   HorizontalAlignment="Left" />-->
+
+                        <StackPanel Orientation="Horizontal" Margin="2,0,0,0" Grid.Row="1" Grid.ColumnSpan="3">
+                            <!--<TextBlock Grid.Row="1" Grid.Column="0"
+                                       Text="Start:" 
+                                       Height="Auto" Margin="2,0,0,0" Foreground="White" FontWeight="ExtraBold"
+                                       Style="{StaticResource ContentTextStyle}" 
+                                       HorizontalAlignment="Left"/>-->
+
+                            <TextBlock 
+                                       Text="{Binding Mode=OneWay, Path=StartTime, StringFormat=\{0:t\}}" 
+                                       Height="Auto" Margin="2,0,0,0" Foreground="White" FontWeight="ExtraBold"
+                                       Style="{StaticResource ContentTextStyle}" 
+                                       HorizontalAlignment="Left"/>
+                            <TextBlock Text=" - " Height="Auto" Margin="2,0,0,0" Foreground="White" FontWeight="ExtraBold"
+                                       Style="{StaticResource ContentTextStyle}" 
+                                       HorizontalAlignment="Left"/>
+                            <!--<TextBlock Grid.Row="2" Grid.Column="0"
+                                       Text="End: " 
+                                       Height="Auto" Margin="2,0,0,0" Foreground="White" FontWeight="ExtraBold"
+                                       Style="{StaticResource ContentTextStyle}" 
+                                       HorizontalAlignment="Left" />-->
+
+                            <TextBlock 
+                                       Text="{Binding Mode=OneWay, Path=EndTime, StringFormat=\{0:t\}}"
+                                       Height="Auto" Margin="2,0,0,0" Foreground="White" FontWeight="ExtraBold"
+                                       Style="{StaticResource ContentTextStyle}" 
+                                       HorizontalAlignment="Left" />
+                        </StackPanel>
+                        <toolkit:Expander Name="expander1" ExpandDirection="Down" 
+                                          Header="What you'll be doing..." Height="Auto"  Foreground="White"
+                                          Grid.Row="2" Grid.ColumnSpan="4" Margin="2,0,0,2"  >
+                            <TextBlock TextWrapping="Wrap" Text="{Binding Description, Mode=TwoWay}" Width="290"
+                                       Height="Auto" Foreground="White" FontWeight="ExtraBold"
+                                   Style="{StaticResource ContentTextStyle}" 
+                                   HorizontalAlignment="Left"/>
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Expanded">
+                                    <Micro:ActionMessage MethodName="ExpandAssigned" >
+                                        <Micro:Parameter Value="{Binding ElementName=Name, Path=Text}" />
+                                    </Micro:ActionMessage>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </toolkit:Expander>
+                        <!--<Rectangle Grid.Column="4" Grid.Row="1" Grid.RowSpan="2" 
+                                   Width="55" Height="55"
+                                   HorizontalAlignment="Left"
+                                   Margin="7,7,3,4">
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource=""/>
+                            </Rectangle.Fill>
+                            
+                        </Rectangle>-->
+                        <!--<Image Grid.Column="3" Grid.Row="1" Grid.RowSpan="2"  
+                               HorizontalAlignment="Right" 
+                               Source="../Images/Pencil3-32.png"
+                               Margin="7,7,7,4"
+                               Height="55" />
+
+                        <Rectangle Width="160" Height="120"
+                            Stroke="Black"
+                            StrokeThickness="1">
+                                <Rectangle.Fill>
+                                       <ImageBrush ImageSource="kauai.jpg" />
+                                </Rectangle.Fill>
+                        </Rectangle>-->
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+            <!--<StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Start Time:" Height="Auto" Margin="2,0,0,0" Foreground="Black"
+                               Style="{StaticResource ContentTextStyle}" HorizontalAlignment="Stretch" TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding StartTime,  Mode=OneWay}" Height="Auto" Margin="2,0,0,0" Foreground="Black"
+                               Style="{StaticResource ContentTextStyle}" HorizontalAlignment="Stretch" TextWrapping="Wrap"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="End Time:" Height="Auto" Margin="2,0,0,0" Foreground="Black"
+                               Style="{StaticResource ContentTextStyle}" HorizontalAlignment="Stretch" TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding EndTime,  Mode=OneWay}"  Height="Auto" Margin="2,0,0,0" Foreground="Black"
+                               Style="{StaticResource ContentTextStyle}" HorizontalAlignment="Stretch" TextWrapping="Wrap"/>
+                </StackPanel>-->
+        </DataTemplate>
+    </navigation:Page.Resources>
+    
+        <Grid x:Name="LayoutRoot">
+        <views:SponsorWidgetView VerticalAlignment="Top" HorizontalAlignment="Left" Background="Transparent"/>
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}" Margin="30,-20,0,10">
+            <Controls:BusyIndicatorEx
+                     BusyContent="{Binding BusyMessage}" 
+                     IsBusy="{Binding IsBusy}">
+                <StackPanel x:Name="ContentStackPanel" Style="{StaticResource ContentStackPanelStyle}" HorizontalAlignment="Center">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+
+                        <StackPanel Grid.Row="0" Margin="0,15,0,10">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock x:Name="HeaderText" Style="{StaticResource HeaderTextStyle}" Margin="0"
+                                Text="{Binding Path=ApplicationStrings.VolunteerPageTitle, Source={StaticResource ResourceWrapper}}"/>
+                                <TextBlock Margin="90,15,0,0" Style="{StaticResource ContentTextStyle}" 
+                                       Foreground="{StaticResource ColorAccentHighlightBrush}" 
+                                       HorizontalAlignment="Center"
+                                       Text="(Simply drag items from the Available Tasks and drop them on your list.)" FontSize="13"/>
+                            </StackPanel>
+                        <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+
+                                    <RowDefinition Height="30"/>
+                                </Grid.RowDefinitions>
+
+                                <!--<TextBlock x:Name="HeaderText" 
+                                       Style="{StaticResource HeaderTextStyle}" 
+                                       Margin="0,5"
+                                       Text="{Binding Path=ApplicationStrings.VolunteerPageTitle, Source={StaticResource ResourceWrapper}}"/>-->
+                                <StackPanel Grid.Column="0">
+                                    <TextBlock x:Name="ICanText" 
+                                       Style="{StaticResource SubHeaderTextStyle}" 
+                                       Margin="0"
+                                       Text="{Binding Path=ApplicationStrings.ICanLabel, Source={StaticResource ResourceWrapper}}"/>
+                                    <toolkit:ListBoxDragDropTarget >
+                                        <ListBox x:Name="AssignedVolunteerTaskList" AllowDrop="True"
+                                            ItemsSource="{Binding AssignedVolunteerTasks, Mode=TwoWay}" 
+                                            Width="320"
+                                            SelectedItem="{Binding SelectedAssignedTask, Mode=TwoWay}" 
+                                            ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                                            ScrollViewer.VerticalScrollBarVisibility="Visible"
+                                            ItemTemplate="{StaticResource VolunteerListItemTemplate}" 
+                                            Height="390" Margin="0"
+                                            Background="Transparent" />
+                                    </toolkit:ListBoxDragDropTarget>
+                                </StackPanel>
+                                <Rectangle Width="45" Grid.Row="0" Grid.Column="1" />
+                                <StackPanel Grid.Column="2">
+                                    <TextBlock x:Name="WeNeedText" 
+                                       Style="{StaticResource SubHeaderTextStyle}" 
+                                       Margin="0"
+                                       Text="{Binding Path=ApplicationStrings.WeNeedLabel, Source={StaticResource ResourceWrapper}}"/>
+                                    <toolkit:ListBoxDragDropTarget >
+                                        <ListBox x:Name="AvailableVolunteerTaskList" AllowDrop="True"                                     
+                                            ItemsSource="{Binding AvailableVolunteerTasks, Mode=TwoWay}" 
+                                            Width="320"
+                                            SelectedItem="{Binding SelectedAvailableTask, Mode=TwoWay}" 
+                                            ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                                            ScrollViewer.VerticalScrollBarVisibility="Visible"
+                                            ItemTemplate="{StaticResource TaskListItemTemplate}" 
+                                            Height="390" Margin="0"
+                                            Background="Transparent" />
+                                    </toolkit:ListBoxDragDropTarget>
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Orientation="Vertical">
+                            <Button x:Name="Save" Width="80" Height="30" Margin="0,-20,0,0" Content="Save" />
+
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Controls:BusyIndicatorEx>
+        </ScrollViewer>
+    </Grid>
+
+</navigation:Page>

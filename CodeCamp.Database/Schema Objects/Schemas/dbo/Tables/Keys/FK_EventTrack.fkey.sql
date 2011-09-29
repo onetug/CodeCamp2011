@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[Tracks]
+    ADD CONSTRAINT [FK_EventTrack] FOREIGN KEY ([EventId]) REFERENCES [dbo].[Events] ([Id]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+

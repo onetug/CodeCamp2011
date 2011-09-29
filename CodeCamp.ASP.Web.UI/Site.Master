@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CodeCamp.ASP.Web.UI.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-10607215-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
+</head>
+<body >
+    <form runat="server" class="form">
+    <div class="page">
+        <div class="title">
+            <a href="<%=SemStateCollegeUrl%>" target="_blank">
+                <img src="Images/bing.png" alt="Map to Seminole State College" 
+                    style= "margin-top: -5px; float:left; margin-left:715px; margin-bottom: 0px; height: 37px; width: 52px; border: none;" /></a>
+                <asp:Label ID="EventDateLabel" Font-Bold="true" ForeColor="Black" runat="server" style="padding-right:10px; float:right;">March 26, 2011</asp:Label>
+            <br />
+            <asp:Label Font-Bold="true" ForeColor="Black" ID="EventLocationLabel" runat="server" style= "padding-right:10px; float:right;">Seminole State College</asp:Label>
+                <a style="margin-top: 25px; 
+                    margin-left: 780px; 
+                    float: left; 
+                    height: 55px; 
+                    width: 169px;" 
+                    href="RegisterView.aspx"></a>
+
+                <asp:Panel ID="LoginPanel" runat="server" Style="float:left;padding:15px;margin:70px,0px,0px,0px;">
+                    <asp:Label ID="EmailLabel" runat="server" Text="Email: " Style="font-weight:bold;margin:10px,10px,10px,10px;padding:10px;" ForeColor="White"/>
+                    <asp:TextBox ID="email" runat="server" Width="200px" />
+                    <asp:Label ID="PasswordLabel" runat="server" Text="Password: " Style="font-weight:bold;margin:10px,10px,10px,10px;padding:10px" ForeColor="White"/>
+                    <asp:TextBox ID="pass" runat="server" Width="200px" TextMode="Password"/>
+                    <asp:Button ID="LoginButton" runat="server" OnClick="Login_Click" Text="Login" Width="80px" Height="30px"  Style="font-weight:bold;font-size:12;margin:40px,10px,10px,10px;"/>
+                    <asp:Button ID="ContactButton" runat="server" OnClick="Contact_Click" Text="Contact Us" Width="90px" Height="30px"  Style="font-weight:bold;font-size:12;margin:40px,10px,10px,10px;"/>
+                </asp:Panel>        
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

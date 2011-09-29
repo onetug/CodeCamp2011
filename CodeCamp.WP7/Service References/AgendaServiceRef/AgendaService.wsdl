@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetAgendaItems">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgendaItemsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAgendaItemsResult" type="tns:ArrayOfAgendaItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAgendaItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AgendaItem" nillable="true" type="tns:AgendaItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AgendaItem">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SessionId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Rating" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comment" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateRating">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="item" type="tns:AgendaItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRatingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Attend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="sessionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AttendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AttendResult" type="tns:ArrayOfAgendaItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEvent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEventResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEventResult" type="tns:Event" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Event">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tracks" type="tns:ArrayOfTrack" />
+          <s:element minOccurs="0" maxOccurs="1" name="Speakers" type="tns:ArrayOfSpeaker" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sessions" type="tns:ArrayOfSession" />
+          <s:element minOccurs="0" maxOccurs="1" name="Agenda" type="tns:ArrayOfAgendaItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTrack">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Track" nillable="true" type="tns:Track" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Track">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSpeaker">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Speaker" nillable="true" type="tns:Speaker" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Speaker">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Twitter" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Blog" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bio" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSession">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Session" nillable="true" type="tns:Session" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Session">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Track" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Level" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StartTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EndTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Speaker" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Room" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAgendaItemsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAgendaItems" />
+  </wsdl:message>
+  <wsdl:message name="GetAgendaItemsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAgendaItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRatingSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRating" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRatingSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRatingResponse" />
+  </wsdl:message>
+  <wsdl:message name="AttendSoapIn">
+    <wsdl:part name="parameters" element="tns:Attend" />
+  </wsdl:message>
+  <wsdl:message name="AttendSoapOut">
+    <wsdl:part name="parameters" element="tns:AttendResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEventSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEvent" />
+  </wsdl:message>
+  <wsdl:message name="GetEventSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEventResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AgendaServiceSoap">
+    <wsdl:operation name="GetAgendaItems">
+      <wsdl:input message="tns:GetAgendaItemsSoapIn" />
+      <wsdl:output message="tns:GetAgendaItemsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRating">
+      <wsdl:input message="tns:UpdateRatingSoapIn" />
+      <wsdl:output message="tns:UpdateRatingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Attend">
+      <wsdl:input message="tns:AttendSoapIn" />
+      <wsdl:output message="tns:AttendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEvent">
+      <wsdl:input message="tns:GetEventSoapIn" />
+      <wsdl:output message="tns:GetEventSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AgendaServiceSoap" type="tns:AgendaServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAgendaItems">
+      <soap:operation soapAction="http://tempuri.org/GetAgendaItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRating">
+      <soap:operation soapAction="http://tempuri.org/UpdateRating" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Attend">
+      <soap:operation soapAction="http://tempuri.org/Attend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEvent">
+      <soap:operation soapAction="http://tempuri.org/GetEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AgendaServiceSoap12" type="tns:AgendaServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAgendaItems">
+      <soap12:operation soapAction="http://tempuri.org/GetAgendaItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRating">
+      <soap12:operation soapAction="http://tempuri.org/UpdateRating" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Attend">
+      <soap12:operation soapAction="http://tempuri.org/Attend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEvent">
+      <soap12:operation soapAction="http://tempuri.org/GetEvent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AgendaService">
+    <wsdl:port name="AgendaServiceSoap" binding="tns:AgendaServiceSoap">
+      <soap:address location="http://services.orlandocodecamp.com/AgendaService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AgendaServiceSoap12" binding="tns:AgendaServiceSoap12">
+      <soap12:address location="http://services.orlandocodecamp.com/AgendaService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

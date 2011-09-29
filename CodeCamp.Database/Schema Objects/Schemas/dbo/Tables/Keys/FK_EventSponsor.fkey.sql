@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[Sponsors]
+    ADD CONSTRAINT [FK_EventSponsor] FOREIGN KEY ([EventId]) REFERENCES [dbo].[Events] ([Id]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+

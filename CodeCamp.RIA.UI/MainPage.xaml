@@ -1,0 +1,78 @@
+﻿<UserControl 
+  x:Class="CodeCamp.RIA.UI.MainPage"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation" 
+  xmlns:uriMapper="clr-namespace:System.Windows.Navigation;assembly=System.Windows.Controls.Navigation"
+  xmlns:dataControls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data.DataForm.Toolkit" 
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+  xmlns:controls="clr-namespace:CodeCamp.RIA.UI.Controls" xmlns:Micro="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro" mc:Ignorable="d" d:DesignWidth="950" d:DesignHeight="480">
+
+    <Grid>
+        <Border x:Name="ContentBorder" Style="{StaticResource NavContentBorderStyle}" Grid.Row="2">
+            <navigation:Frame x:Name="ContentFrame" Style="{StaticResource ContentFrameStyle}" 
+                              Source="/AgendaView" Navigated="ContentFrame_Navigated" NavigationFailed="ContentFrame_NavigationFailed">
+                <navigation:Frame.ContentLoader>
+                    <Micro:MEFContentLoader />
+                </navigation:Frame.ContentLoader>
+            </navigation:Frame>
+            <!--<navigation:Frame x:Name="ContentFrame" Style="{StaticResource NavContentFrameStyle}" Navigated="ContentFrame_Navigated" NavigationFailed="ContentFrame_NavigationFailed" />-->
+        </Border>
+        <controls:TiledBackground SourceUri="/CodeCamp.RIA.UI;component/Images/backgroundtexture.png" />
+        <Image Source="/CodeCamp.RIA.UI;component/Images/backgroundshadow.png" Stretch="Fill" />
+
+        <Border x:Name="BackgroundBorder" Style="{StaticResource BackgroundBorderStyle}" />
+
+        <Border x:Name="LinksBorder" Style="{StaticResource NavLinksBorderStyle}" />
+
+        <Grid x:Name="LayoutRoot" Style="{StaticResource LayoutRootGridStyle}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Image Source="Images/CodeCamp.png" Height="37" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel x:Name="LinksStackPanel" Style="{StaticResource LinksStackPanelStyle}" Margin="130,0,0,0" VerticalAlignment="Top">
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/AgendaView" TargetName="ContentFrame" Content="Attend" />
+                    <Rectangle x:Name="Divider1" Style="{StaticResource DividerStyle}"/>
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/SponsorView" TargetName="ContentFrame" Content="Sponsor" />
+                    <Rectangle x:Name="Divider2" Style="{StaticResource DividerStyle}"/>
+                    <!--<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/Register" TargetName="ContentFrame" Content="Register" />
+                    <Rectangle x:Name="Divider3" Style="{StaticResource DividerStyle}"/>-->
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/SpeakerView" TargetName="ContentFrame" Content="Present" />
+                    <Rectangle x:Name="Divider4" Style="{StaticResource DividerStyle}"/>
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/VolunteerView" TargetName="ContentFrame" Content="Volunteer" />
+                    <Rectangle x:Name="Divider5" Style="{StaticResource DividerStyle}"/>
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/AboutView" TargetName="ContentFrame" Content="About" />
+                    <Rectangle x:Name="Divider6" Style="{StaticResource DividerStyle}"/>
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/ProfileView" TargetName="ContentFrame" Content="Profile" />
+                </StackPanel>
+
+                <TextBlock x:Name="UserWelcome" Grid.Column="1" Text="Welcome, " HorizontalAlignment="Right" Margin="0,10,10,0" Width="Auto" 
+                           Foreground="{StaticResource ColorAccentSolidBrush}" FontFamily="{StaticResource ContentFontFamily}" FontSize="{StaticResource Heading5FontSize}" FontWeight="Bold"/>
+
+            </Grid>
+
+            <!--<Border x:Name="BrandingBorder" Style="{StaticResource NavBrandingBorderStyle}" Grid.Row="1">
+                <StackPanel x:Name="BrandingStackPanel" Style="{StaticResource NavBrandingStackPanelStyle}">
+                    <TextBlock x:Name="ApplicationNameTextBlock" Style="{StaticResource ApplicationNameStyle}" Text="Orlando CodeCamp 2011 " />
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Bottom">
+                        <TextBlock Text="Orlando .NET User Group" />
+                        <TextBlock Text="The Community for .NET Developers in Central Florida"/>
+                    </StackPanel>
+                    <ContentControl Style="{StaticResource NavLogoIcon}" VerticalAlignment="Top" >
+
+                    </ContentControl>
+                </StackPanel>
+            </Border>-->
+
+        </Grid>
+    </Grid>
+</UserControl>

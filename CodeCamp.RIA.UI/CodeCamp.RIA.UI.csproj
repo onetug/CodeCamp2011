@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9DCE48E-42C1-4769-8440-87B570B45837}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeCamp.RIA.UI</RootNamespace>
+    <AssemblyName>CodeCamp.RIA.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>en-US</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>CodeCamp.RIA.UI.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>CodeCamp.RIA.UI.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Caliburn.Micro, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\lib\Caliburn\Caliburn.Micro.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.Composition.Initialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.DomainServices.Client, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.DomainServices.Client.Web, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Data.DataForm.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\SilverlightToolkit\System.Windows.Controls.Data.DataForm.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Data.Input" />
+    <Reference Include="System.Windows.Controls.Data.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\SilverlightToolkit\System.Windows.Controls.Data.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\SilverlightToolkit\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.DomainServices, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\SilverlightToolkit\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Layout.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\SilverlightToolkit\System.Windows.Controls.Layout.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\SilverlightToolkit\System.Windows.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Toolkit.Internals, Version=4.0.5.0, Culture=neutral, PublicKeyToken=2c5c654d367bf4a7, processorArchitecture=MSIL">
+      <HintPath>..\lib\SilverlightToolkit\System.Windows.Controls.Toolkit.Internals.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\lib\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Windows.Controls" />
+    <Reference Include="System.Windows.Controls.Navigation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppBoostrapper.cs" />
+    <Compile Include="Assets\Resources\ApplicationStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplicationStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\Resources\ErrorResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErrorResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BusyIndicatorEx.cs" />
+    <Compile Include="Controls\PreferenceValueRadioButton.xaml.cs">
+      <DependentUpon>PreferenceValueRadioButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PreferenceValueRadioButtonGroup.xaml.cs">
+      <DependentUpon>PreferenceValueRadioButtonGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\BoolToCheckedConverter.cs" />
+    <Compile Include="Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Converters\EnumBoolConverter.cs" />
+    <Compile Include="Converters\RadioButtonConverter.cs" />
+    <Compile Include="Converters\StringToUriConverter.cs" />
+    <Compile Include="Events\DataLoadedEvent.cs" />
+    <Compile Include="Events\ErrorWindowEvent.cs" />
+    <Compile Include="Events\IsDirtyEvent.cs" />
+    <Compile Include="Events\MessageBoxEvent.cs" />
+    <Compile Include="Events\NavigationEvent.cs" />
+    <Compile Include="Events\ProfileEditedEvent.cs" />
+    <Compile Include="Helpers\BindingHelper.cs" />
+    <Compile Include="Helpers\Encryption.cs" />
+    <Compile Include="Controls\ExtendedTextBox.cs" />
+    <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\IMessageBox.cs" />
+    <Compile Include="Helpers\ScrollViewerOffsetMediator.cs" />
+    <Compile Include="Helpers\StandardMessageBox.cs" />
+    <Compile Include="Helpers\UpdateOnTextChangedBehavior.cs" />
+    <Compile Include="Helpers\UpdateSourceTriggerHelper.cs" />
+    <Compile Include="Model\BaseModel.cs" />
+    <Compile Include="Model\PreferenceValue.cs" />
+    <Compile Include="Model\Presentation.cs" />
+    <Compile Include="Model\Profile.cs" />
+    <Compile Include="ViewModels\AboutViewModel.cs" />
+    <Compile Include="Controls\TiledBackground.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Controls\VisualStates.cs" />
+    <Compile Include="Controls\CustomDataForm.cs" />
+    <Compile Include="Helpers\DataBindingExtensions.cs" />
+    <Compile Include="Helpers\DataFieldExtensions.cs" />
+    <Compile Include="Converters\NotOperatorValueConverter.cs" />
+    <Compile Include="Converters\StringFormatValueConverter.cs" />
+    <Compile Include="Converters\TargetNullValueConverter.cs" />
+    <Compile Include="Helpers\ResourceWrapper.cs" />
+    <Compile Include="Assets\Resources\SecurityQuestions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecurityQuestions.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AgendaViewModel.cs" />
+    <Compile Include="ViewModels\ErrorPageViewModel.cs" />
+    <Compile Include="ViewModels\Interfaces\IItem.cs" />
+    <Compile Include="ViewModels\Interfaces\IModule.cs" />
+    <Compile Include="ViewModels\Interfaces\IShell.cs" />
+    <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="ViewModels\PresentationViewModel.cs" />
+    <Compile Include="ViewModels\ProfileViewModel.cs" />
+    <Compile Include="ViewModels\SessionViewModel.cs" />
+    <Compile Include="ViewModels\SpeakerViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\SponsorViewModel.cs" />
+    <Compile Include="ViewModels\VolunteerViewModel.cs" />
+    <Compile Include="Views\ErrorPage.xaml.cs">
+      <DependentUpon>ErrorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShellView.xaml.cs">
+      <DependentUpon>ShellView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PresentationView.xaml.cs">
+      <DependentUpon>PresentationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SessionView.xaml.cs">
+      <DependentUpon>SessionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SpeakerView.xaml.cs">
+      <DependentUpon>SpeakerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SponsorView.xaml.cs">
+      <DependentUpon>SponsorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SponsorWidgetView.xaml.cs">
+      <DependentUpon>SponsorWidgetView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VolunteerView.xaml.cs">
+      <DependentUpon>VolunteerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ErrorWindow.xaml.cs">
+      <DependentUpon>ErrorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AboutView.xaml.cs">
+      <DependentUpon>AboutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AgendaView.xaml.cs">
+      <DependentUpon>AgendaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ProfileView.xaml.cs">
+      <DependentUpon>ProfileView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Assets\Brushes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\CoreStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\Fonts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\SDKStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\ToolkitStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PreferenceValueRadioButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PreferenceValueRadioButtonGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ErrorPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ShellView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PresentationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SessionView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SpeakerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SponsorView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SponsorWidgetView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VolunteerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ErrorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Views\AboutView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Views\AgendaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Views\ProfileView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Resources\ApplicationStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ApplicationStrings.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>CodeCamp.RIA.UI</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Resources\ErrorResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorResources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>CodeCamp.RIA.UI</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Resources\SecurityQuestions.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SecurityQuestions.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>CodeCamp.RIA.UI</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\Resources\RegistrationDataResources.resx" />
+    <EmbeddedResource Include="Web\Resources\ValidationErrorResources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\CodeCamp.RIA.Data.Web.CodeCampDomainContext.datasource" />
+    <None Include="Properties\OutOfBrowserSettings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\backgroundshadow.png" />
+    <Resource Include="Images\backgroundtexture.png" />
+    <Resource Include="Images\x2scrap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CodeCamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CodeCamp-Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CodeCamp-Square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeCamp.RIA.Data\CodeCamp.RIA.Data.csproj">
+      <Project>{EEEC542C-21B8-426E-8C83-360486CA8B7C}</Project>
+      <Name>CodeCamp.RIA.Data %28CodeCamp.RIA.Data\CodeCamp.RIA.Data%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeCamp.RIA.UI.Infrastructure\CodeCamp.RIA.UI.Infrastructure.csproj">
+      <Project>{C83FCFEC-F4A0-45F6-B033-5DE21CA25A63}</Project>
+      <Name>CodeCamp.RIA.UI.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Delete-32.png" />
+    <Resource Include="Images\Pencil3-32.png" />
+    <Resource Include="Images\Sponsors\Apress.png" />
+    <Resource Include="Images\Sponsors\AtlanticNet.png" />
+    <Resource Include="Images\Sponsors\CODEMagazine.png" />
+    <Resource Include="Images\Sponsors\ComponentArt.png" />
+    <Resource Include="Images\Sponsors\GrapeCity.png" />
+    <Resource Include="Images\Sponsors\infragistics.png" />
+    <Resource Include="Images\Sponsors\IronSpeed.png" />
+    <Resource Include="Images\Sponsors\LearnVisualStudio.png" />
+    <Resource Include="Images\Sponsors\microsoft.png" />
+    <Resource Include="Images\Sponsors\OReilly.png" />
+    <Resource Include="Images\Sponsors\PDSA.png" />
+    <Resource Include="Images\Sponsors\telerik.png" />
+    <Resource Include="Images\Sponsors\viblend.png" />
+    <Resource Include="Images\Sponsors\wrox.png" />
+    <Resource Include="Images\Sponsors\ArrowConsulting.png" />
+    <Resource Include="Images\Sponsors\aspose.png" />
+    <Resource Include="Images\Sponsors\DevExpress.png" />
+    <Resource Include="Images\Sponsors\PowerDNN.png" />
+    <Resource Include="Images\Sponsors\AxoSoft.png" />
+    <Resource Include="Images\Sponsors\ComponentOne.png" />
+    <Resource Include="Images\Sponsors\DeVry.png" />
+    <Resource Include="Images\Sponsors\Perpetuum.png" />
+    <Resource Include="Images\Sponsors\steema.png" />
+    <Resource Include="Images\Sponsors\TXTextControl.png" />
+    <Resource Include="Images\Sponsors\AppliedInnovations.png" />
+    <Resource Include="Images\Sponsors\SeminoleState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\xceed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\SQLRally.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\agilezen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\DNNCorp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\FanTagz.png" />
+    <Resource Include="Images\Sponsors\LogicNP.png" />
+    <Resource Include="Images\Sponsors\PointClick.png" />
+    <Resource Include="Images\Sponsors\veredus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\noemax.png" />
+    <Resource Include="Images\Sponsors\PottsConsulting.png" />
+    <Resource Include="Images\Sponsors\pruf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\Pluralsight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\Murach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\4Corner.png" />
+    <Resource Include="Images\Sponsors\tekkfusion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\MicroApplications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\M2E.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\Onetug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sponsors\BlueSky.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

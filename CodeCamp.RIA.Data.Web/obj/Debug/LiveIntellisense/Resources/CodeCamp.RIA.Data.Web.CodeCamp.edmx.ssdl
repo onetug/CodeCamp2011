@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CodeCampModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="CodeCampModelStoreContainer">
+    <EntitySet Name="Announcements" EntityType="CodeCampModel.Store.Announcements" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Category" EntityType="CodeCampModel.Store.Category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CategoryLog" EntityType="CodeCampModel.Store.CategoryLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ContactRequests" EntityType="CodeCampModel.Store.ContactRequests" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EventAttendeePreferenceValues" EntityType="CodeCampModel.Store.EventAttendeePreferenceValues" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EventAttendees" EntityType="CodeCampModel.Store.EventAttendees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EventOrganizer" EntityType="CodeCampModel.Store.EventOrganizer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EventPresentations" EntityType="CodeCampModel.Store.EventPresentations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Events" EntityType="CodeCampModel.Store.Events" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Files" EntityType="CodeCampModel.Store.Files" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Locations" EntityType="CodeCampModel.Store.Locations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Log" EntityType="CodeCampModel.Store.Log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="People" EntityType="CodeCampModel.Store.People" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Preferences" EntityType="CodeCampModel.Store.Preferences" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PreferenceValues" EntityType="CodeCampModel.Store.PreferenceValues" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Presentations" EntityType="CodeCampModel.Store.Presentations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PresentationSpeakers" EntityType="CodeCampModel.Store.PresentationSpeakers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rooms" EntityType="CodeCampModel.Store.Rooms" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SessionAttendees" EntityType="CodeCampModel.Store.SessionAttendees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sessions" EntityType="CodeCampModel.Store.Sessions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SponsorPerson" EntityType="CodeCampModel.Store.SponsorPerson" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sponsors" EntityType="CodeCampModel.Store.Sponsors" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SponsorshipLevels" EntityType="CodeCampModel.Store.SponsorshipLevels" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TrackOwner" EntityType="CodeCampModel.Store.TrackOwner" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tracks" EntityType="CodeCampModel.Store.Tracks" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_CategoryLog_Category" Association="CodeCampModel.Store.FK_CategoryLog_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="CategoryLog" EntitySet="CategoryLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryLog_Log" Association="CodeCampModel.Store.FK_CategoryLog_Log">
+      <End Role="Log" EntitySet="Log" />
+      <End Role="CategoryLog" EntitySet="CategoryLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventAnnouncement" Association="CodeCampModel.Store.FK_EventAnnouncement">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Announcements" EntitySet="Announcements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventAttendeePreferenceValues_EventAttendee" Association="CodeCampModel.Store.FK_EventAttendeePreferenceValues_EventAttendee">
+      <End Role="EventAttendees" EntitySet="EventAttendees" />
+      <End Role="EventAttendeePreferenceValues" EntitySet="EventAttendeePreferenceValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventAttendeePreferenceValues_PreferenceValue" Association="CodeCampModel.Store.FK_EventAttendeePreferenceValues_PreferenceValue">
+      <End Role="PreferenceValues" EntitySet="PreferenceValues" />
+      <End Role="EventAttendeePreferenceValues" EntitySet="EventAttendeePreferenceValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventAttendeeSessionAttendee" Association="CodeCampModel.Store.FK_EventAttendeeSessionAttendee">
+      <End Role="EventAttendees" EntitySet="EventAttendees" />
+      <End Role="SessionAttendees" EntitySet="SessionAttendees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventContactRequest" Association="CodeCampModel.Store.FK_EventContactRequest">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="ContactRequests" EntitySet="ContactRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventEventAttendee" Association="CodeCampModel.Store.FK_EventEventAttendee">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventAttendees" EntitySet="EventAttendees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventLocation" Association="CodeCampModel.Store.FK_EventLocation">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventOrganizer_Event" Association="CodeCampModel.Store.FK_EventOrganizer_Event">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventOrganizer" EntitySet="EventOrganizer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventOrganizer_Person" Association="CodeCampModel.Store.FK_EventOrganizer_Person">
+      <End Role="People" EntitySet="People" />
+      <End Role="EventOrganizer" EntitySet="EventOrganizer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventPreference" Association="CodeCampModel.Store.FK_EventPreference">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Preferences" EntitySet="Preferences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventPresentationSubmission" Association="CodeCampModel.Store.FK_EventPresentationSubmission">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventPresentations" EntitySet="EventPresentations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventSponsor" Association="CodeCampModel.Store.FK_EventSponsor">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Sponsors" EntitySet="Sponsors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventTrack" Association="CodeCampModel.Store.FK_EventTrack">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Tracks" EntitySet="Tracks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LocationRoom" Association="CodeCampModel.Store.FK_LocationRoom">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Rooms" EntitySet="Rooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonAnnouncement" Association="CodeCampModel.Store.FK_PersonAnnouncement">
+      <End Role="People" EntitySet="People" />
+      <End Role="Announcements" EntitySet="Announcements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonEventAttendee" Association="CodeCampModel.Store.FK_PersonEventAttendee">
+      <End Role="People" EntitySet="People" />
+      <End Role="EventAttendees" EntitySet="EventAttendees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PreferencePreferenceValue" Association="CodeCampModel.Store.FK_PreferencePreferenceValue">
+      <End Role="Preferences" EntitySet="Preferences" />
+      <End Role="PreferenceValues" EntitySet="PreferenceValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PresentationFile" Association="CodeCampModel.Store.FK_PresentationFile">
+      <End Role="Presentations" EntitySet="Presentations" />
+      <End Role="Files" EntitySet="Files" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PresentationSpeakers_Person" Association="CodeCampModel.Store.FK_PresentationSpeakers_Person">
+      <End Role="People" EntitySet="People" />
+      <End Role="PresentationSpeakers" EntitySet="PresentationSpeakers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PresentationSpeakers_Presentation" Association="CodeCampModel.Store.FK_PresentationSpeakers_Presentation">
+      <End Role="Presentations" EntitySet="Presentations" />
+      <End Role="PresentationSpeakers" EntitySet="PresentationSpeakers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PresentationSubmissionPresentation" Association="CodeCampModel.Store.FK_PresentationSubmissionPresentation">
+      <End Role="Presentations" EntitySet="Presentations" />
+      <End Role="EventPresentations" EntitySet="EventPresentations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SessionEventPresentation" Association="CodeCampModel.Store.FK_SessionEventPresentation">
+      <End Role="EventPresentations" EntitySet="EventPresentations" />
+      <End Role="Sessions" EntitySet="Sessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SessionRoom" Association="CodeCampModel.Store.FK_SessionRoom">
+      <End Role="Rooms" EntitySet="Rooms" />
+      <End Role="Sessions" EntitySet="Sessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SessionSessionAttendee" Association="CodeCampModel.Store.FK_SessionSessionAttendee">
+      <End Role="Sessions" EntitySet="Sessions" />
+      <End Role="SessionAttendees" EntitySet="SessionAttendees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SponsorPerson_Person" Association="CodeCampModel.Store.FK_SponsorPerson_Person">
+      <End Role="People" EntitySet="People" />
+      <End Role="SponsorPerson" EntitySet="SponsorPerson" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SponsorPerson_Sponsor" Association="CodeCampModel.Store.FK_SponsorPerson_Sponsor">
+      <End Role="Sponsors" EntitySet="Sponsors" />
+      <End Role="SponsorPerson" EntitySet="SponsorPerson" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SponsorSponsorshipLevel" Association="CodeCampModel.Store.FK_SponsorSponsorshipLevel">
+      <End Role="SponsorshipLevels" EntitySet="SponsorshipLevels" />
+      <End Role="Sponsors" EntitySet="Sponsors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrackActivity" Association="CodeCampModel.Store.FK_TrackActivity">
+      <End Role="Tracks" EntitySet="Tracks" />
+      <End Role="Sessions" EntitySet="Sessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrackOwner_Person" Association="CodeCampModel.Store.FK_TrackOwner_Person">
+      <End Role="People" EntitySet="People" />
+      <End Role="TrackOwner" EntitySet="TrackOwner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrackOwner_Track" Association="CodeCampModel.Store.FK_TrackOwner_Track">
+      <End Role="Tracks" EntitySet="Tracks" />
+      <End Role="TrackOwner" EntitySet="TrackOwner" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Announcements">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Text" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AuthorId" Type="int" Nullable="false" />
+    <Property Name="PublishDate" Type="datetime" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="CategoryLog">
+    <Key>
+      <PropertyRef Name="CategoryLogID" />
+    </Key>
+    <Property Name="CategoryLogID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="LogID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContactRequests">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Subject" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Category" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventAttendeePreferenceValues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EventAttendees_Id" Type="int" Nullable="false" />
+    <Property Name="PreferenceValues_Id" Type="int" Nullable="false" />
+    <Property Name="DummyField" Type="int" />
+  </EntityType>
+  <EntityType Name="EventAttendees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CheckedIn" Type="bit" Nullable="false" />
+    <Property Name="RaffleTicket" Type="nvarchar(max)" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="PersonId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventOrganizer">
+    <Key>
+      <PropertyRef Name="EventsAsOrganizer_Id" />
+      <PropertyRef Name="Organizers_Id" />
+    </Key>
+    <Property Name="EventsAsOrganizer_Id" Type="int" Nullable="false" />
+    <Property Name="Organizers_Id" Type="int" Nullable="false" />
+    <Property Name="DummyField" Type="int" />
+  </EntityType>
+  <EntityType Name="EventPresentations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PresentationId" Type="int" Nullable="false" />
+    <Property Name="ApprovalStatus" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Events">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LocationId" Type="int" Nullable="false" />
+    <Property Name="TwitterTag" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Files">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PresentationId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Locations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address2" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="State" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Zip" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EventID" Type="int" />
+    <Property Name="Priority" Type="int" Nullable="false" />
+    <Property Name="Severity" Type="nvarchar" MaxLength="32" />
+    <Property Name="Title" Type="nvarchar" MaxLength="256" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+    <Property Name="MachineName" Type="nvarchar" MaxLength="32" />
+    <Property Name="AppDomainName" Type="nvarchar" MaxLength="512" />
+    <Property Name="ProcessID" Type="nvarchar" MaxLength="256" />
+    <Property Name="ProcessName" Type="nvarchar" MaxLength="512" />
+    <Property Name="ThreadName" Type="nvarchar" MaxLength="512" />
+    <Property Name="Win32ThreadId" Type="nvarchar" MaxLength="128" />
+    <Property Name="Message" Type="nvarchar" MaxLength="1500" />
+    <Property Name="FormattedMessage" Type="ntext" />
+  </EntityType>
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Bio" Type="nvarchar(max)" />
+    <Property Name="Website" Type="nvarchar(max)" />
+    <Property Name="Blog" Type="nvarchar(max)" />
+    <Property Name="Twitter" Type="nvarchar(max)" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ImageUrl" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Preferences">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="Question" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PreferenceValues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PreferenceId" Type="int" Nullable="false" />
+    <Property Name="Answer" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Presentations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Level" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PresentationSpeakers">
+    <Key>
+      <PropertyRef Name="PresentationsAsSpeaker_Id" />
+      <PropertyRef Name="Speakers_Id" />
+    </Key>
+    <Property Name="PresentationsAsSpeaker_Id" Type="int" Nullable="false" />
+    <Property Name="Speakers_Id" Type="int" Nullable="false" />
+    <Property Name="DummyField" Type="int" />
+  </EntityType>
+  <EntityType Name="Rooms">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MaxCapacity" Type="int" Nullable="false" />
+    <Property Name="LocationId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SessionAttendees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EventAttendeeId" Type="int" Nullable="false" />
+    <Property Name="CheckedIn" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Rating" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SessionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sessions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TrackId" Type="int" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Nullable="false" />
+    <Property Name="SessionType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RoomId" Type="int" Nullable="false" />
+    <Property Name="MaxCapacity" Type="int" Nullable="false" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EventPresentation_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SponsorPerson">
+    <Key>
+      <PropertyRef Name="SponsorsAsOwner_Id" />
+      <PropertyRef Name="Owners_Id" />
+    </Key>
+    <Property Name="SponsorsAsOwner_Id" Type="int" Nullable="false" />
+    <Property Name="Owners_Id" Type="int" Nullable="false" />
+    <Property Name="DummyField" Type="int" />
+  </EntityType>
+  <EntityType Name="Sponsors">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ApprovalStatus" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SponsorshipLevelId" Type="int" Nullable="false" />
+    <Property Name="Url" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Image" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SponsorshipLevels">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Amount" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrackOwner">
+    <Key>
+      <PropertyRef Name="TracksAsOwner_Id" />
+      <PropertyRef Name="Owners_Id" />
+    </Key>
+    <Property Name="TracksAsOwner_Id" Type="int" Nullable="false" />
+    <Property Name="Owners_Id" Type="int" Nullable="false" />
+    <Property Name="DummyField" Type="int" />
+  </EntityType>
+  <EntityType Name="Tracks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="RoomId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_CategoryLog_Category">
+    <End Role="Category" Type="CodeCampModel.Store.Category" Multiplicity="1" />
+    <End Role="CategoryLog" Type="CodeCampModel.Store.CategoryLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="CategoryLog">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryLog_Log">
+    <End Role="Log" Type="CodeCampModel.Store.Log" Multiplicity="1" />
+    <End Role="CategoryLog" Type="CodeCampModel.Store.CategoryLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Log">
+        <PropertyRef Name="LogID" />
+      </Principal>
+      <Dependent Role="CategoryLog">
+        <PropertyRef Name="LogID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventAnnouncement">
+    <End Role="Events" Type="CodeCampModel.Store.Events" Multiplicity="1" />
+    <End Role="Announcements" Type="CodeCampModel.Store.Announcements" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Announcements">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventAttendeePreferenceValues_EventAttendee">
+    <End Role="EventAttendees" Type="CodeCampModel.Store.EventAttendees" Multiplicity="1" />
+    <End Role="EventAttendeePreferenceValues" Type="CodeCampModel.Store.EventAttendeePreferenceValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventAttendees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventAttendeePreferenceValues">
+        <PropertyRef Name="EventAttendees_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventAttendeePreferenceValues_PreferenceValue">
+    <End Role="PreferenceValues" Type="CodeCampModel.Store.PreferenceValues" Multiplicity="1" />
+    <End Role="EventAttendeePreferenceValues" Type="CodeCampModel.Store.EventAttendeePreferenceValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PreferenceValues">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventAttendeePreferenceValues">
+        <PropertyRef Name="PreferenceValues_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventAttendeeSessionAttendee">
+    <End Role="EventAttendees" Type="CodeCampModel.Store.EventAttendees" Multiplicity="1" />
+    <End Role="SessionAttendees" Type="CodeCampModel.Store.SessionAttendees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventAttendees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SessionAttendees">
+        <PropertyRef Name="EventAttendeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventContactRequest">
+    <End Role="Events" Type="CodeCampModel.Store.Events" Multiplicity="1" />
+    <End Role="ContactRequests" Type="CodeCampModel.Store.ContactRequests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ContactRequests">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventEventAttendee">
+    <End Role="Events" Type="CodeCampModel.Store.Events" Multiplicity="1" />
+    <End Role="EventAttendees" Type="CodeCampModel.Store.EventAttendees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventAttendees">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventLocation">
+    <End Role="Locations" Type="CodeCampModel.Store.Locations" Multiplicity="1" />
+    <End Role="Events" Type="CodeCampModel.Store.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventOrganizer_Event">
+    <End Role="Events" Type="CodeCampModel.Store.Events" Multiplicity="1" />
+    <End Role="EventOrganizer" Type="CodeCampModel.Store.EventOrganizer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventOrganizer">
+        <PropertyRef Name="EventsAsOrganizer_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventOrganizer_Person">
+    <End Role="People" Type="CodeCampModel.Store.People" Multiplicity="1" />
+    <End Role="EventOrganizer" Type="CodeCampModel.Store.EventOrganizer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="People">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventOrganizer">
+        <PropertyRef Name="Organizers_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventPreference">
+    <End Role="Events" Type="CodeCampModel.Store.Events" Multiplicity="1" />
+    <End Role="Preferences" Type="CodeCampModel.Store.Preferences" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Preferences">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventPresentationSubmission">
+    <End Role="Events" Type="CodeCampModel.Store.Events" Multiplicity="1" />
+    <End Role="EventPresentations" Type="CodeCampModel.Store.EventPresentations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventPresentations">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventSponsor">
+    <End Role="Events" Type="CodeCampModel.Store.Events" Multiplicity="1" />
+    <End Role="Sponsors" Type="CodeCampModel.Store.Sponsors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sponsors">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventTrack">
+    <End Role="Events" Type="CodeCampModel.Store.Events" Multiplicity="1" />
+    <End Role="Tracks" Type="CodeCampModel.Store.Tracks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tracks">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LocationRoom">
+    <End Role="Locations" Type="CodeCampModel.Store.Locations" Multiplicity="1" />
+    <End Role="Rooms" Type="CodeCampModel.Store.Rooms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rooms">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonAnnouncement">
+    <End Role="People" Type="CodeCampModel.Store.People" Multiplicity="1" />
+    <End Role="Announcements" Type="CodeCampModel.Store.Announcements" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="People">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Announcements">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonEventAttendee">
+    <End Role="People" Type="CodeCampModel.Store.People" Multiplicity="1" />
+    <End Role="EventAttendees" Type="CodeCampModel.Store.EventAttendees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="People">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventAttendees">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PreferencePreferenceValue">
+    <End Role="Preferences" Type="CodeCampModel.Store.Preferences" Multiplicity="1" />
+    <End Role="PreferenceValues" Type="CodeCampModel.Store.PreferenceValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Preferences">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PreferenceValues">
+        <PropertyRef Name="PreferenceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PresentationFile">
+    <End Role="Presentations" Type="CodeCampModel.Store.Presentations" Multiplicity="1" />
+    <End Role="Files" Type="CodeCampModel.Store.Files" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Presentations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Files">
+        <PropertyRef Name="PresentationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PresentationSpeakers_Person">
+    <End Role="People" Type="CodeCampModel.Store.People" Multiplicity="1" />
+    <End Role="PresentationSpeakers" Type="CodeCampModel.Store.PresentationSpeakers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="People">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PresentationSpeakers">
+        <PropertyRef Name="Speakers_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PresentationSpeakers_Presentation">
+    <End Role="Presentations" Type="CodeCampModel.Store.Presentations" Multiplicity="1" />
+    <End Role="PresentationSpeakers" Type="CodeCampModel.Store.PresentationSpeakers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Presentations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PresentationSpeakers">
+        <PropertyRef Name="PresentationsAsSpeaker_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PresentationSubmissionPresentation">
+    <End Role="Presentations" Type="CodeCampModel.Store.Presentations" Multiplicity="1" />
+    <End Role="EventPresentations" Type="CodeCampModel.Store.EventPresentations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Presentations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventPresentations">
+        <PropertyRef Name="PresentationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SessionEventPresentation">
+    <End Role="EventPresentations" Type="CodeCampModel.Store.EventPresentations" Multiplicity="1" />
+    <End Role="Sessions" Type="CodeCampModel.Store.Sessions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventPresentations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sessions">
+        <PropertyRef Name="EventPresentation_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SessionRoom">
+    <End Role="Rooms" Type="CodeCampModel.Store.Rooms" Multiplicity="1" />
+    <End Role="Sessions" Type="CodeCampModel.Store.Sessions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rooms">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sessions">
+        <PropertyRef Name="RoomId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SessionSessionAttendee">
+    <End Role="Sessions" Type="CodeCampModel.Store.Sessions" Multiplicity="1" />
+    <End Role="SessionAttendees" Type="CodeCampModel.Store.SessionAttendees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sessions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SessionAttendees">
+        <PropertyRef Name="SessionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SponsorPerson_Person">
+    <End Role="People" Type="CodeCampModel.Store.People" Multiplicity="1" />
+    <End Role="SponsorPerson" Type="CodeCampModel.Store.SponsorPerson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="People">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SponsorPerson">
+        <PropertyRef Name="Owners_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SponsorPerson_Sponsor">
+    <End Role="Sponsors" Type="CodeCampModel.Store.Sponsors" Multiplicity="1" />
+    <End Role="SponsorPerson" Type="CodeCampModel.Store.SponsorPerson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sponsors">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SponsorPerson">
+        <PropertyRef Name="SponsorsAsOwner_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SponsorSponsorshipLevel">
+    <End Role="SponsorshipLevels" Type="CodeCampModel.Store.SponsorshipLevels" Multiplicity="1" />
+    <End Role="Sponsors" Type="CodeCampModel.Store.Sponsors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SponsorshipLevels">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sponsors">
+        <PropertyRef Name="SponsorshipLevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrackActivity">
+    <End Role="Tracks" Type="CodeCampModel.Store.Tracks" Multiplicity="1" />
+    <End Role="Sessions" Type="CodeCampModel.Store.Sessions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tracks">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sessions">
+        <PropertyRef Name="TrackId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrackOwner_Person">
+    <End Role="People" Type="CodeCampModel.Store.People" Multiplicity="1" />
+    <End Role="TrackOwner" Type="CodeCampModel.Store.TrackOwner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="People">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TrackOwner">
+        <PropertyRef Name="Owners_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrackOwner_Track">
+    <End Role="Tracks" Type="CodeCampModel.Store.Tracks" Multiplicity="1" />
+    <End Role="TrackOwner" Type="CodeCampModel.Store.TrackOwner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tracks">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TrackOwner">
+        <PropertyRef Name="TracksAsOwner_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

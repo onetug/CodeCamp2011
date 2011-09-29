@@ -1,0 +1,55 @@
+﻿<navigation:Page 
+  x:Class="CodeCamp.RIA.UI.Views.AboutView" 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation" xmlns:views="clr-namespace:CodeCamp.RIA.UI.Views" mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="640"  
+  Style="{StaticResource PageStyle}">
+
+    <Grid x:Name="LayoutRoot">
+        <views:SponsorWidgetView  VerticalAlignment="Top" HorizontalAlignment="Left" Background="Transparent"/>
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}" Margin="40,-20,0,10">
+
+            <StackPanel x:Name="ContentStackPanel" Style="{StaticResource ContentStackPanelStyle}" HorizontalAlignment="Center">
+
+                <Border x:Name="BrandingBorder" Style="{StaticResource NavBrandingBorderStyle}" Grid.Column="1" Margin="-30,5,0,10" Height="48">
+                    <StackPanel x:Name="BrandingStackPanel" Style="{StaticResource NavBrandingStackPanelStyle}">
+                        <TextBlock x:Name="ApplicationNameTextBlock" Style="{StaticResource ApplicationNameStyle}" Text="Orlando Code Camp 2011 " />
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom">
+                            <TextBlock Text="Orlando .NET User Group" Foreground="{StaticResource OrangeAccentHighlightBrush}"/>
+                            <TextBlock Text="The Community for .NET Developers in Central Florida" Foreground="{StaticResource OrangeAccentHighlightBrush}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <!--<TextBlock x:Name="HeaderText" Style="{StaticResource HeaderTextStyle}" 
+                           Text="{Binding Path=ApplicationStrings.AboutPageTitle, Source={StaticResource ResourceWrapper}}"/>-->
+                <TextBlock x:Name="ContentText" Style="{StaticResource ContentTextStyle}" TextWrapping="Wrap" Width="760" FontSize="15" Margin="0" UseLayoutRounding="True"
+                           Text="The Orlando .NET Users Group's goal is to bring great speakers to Orlando and build a community of developers here in Central Florida. The group was founded by Joel Martinez in September 2001, and incorporated in 2004 as a nonprofit. We are for and by the community. All proceeds are directed toward the members, and our board consists of only unpaid volunteers. On a monthly basis the group will ask a speaker to come and talk about a .NET topic. Topics range from beginner to advanced. Annually, the group puts together a Code Camp where hundreds of developers from all over the state and beyond gather for a one day free conference. The group belongs to the umbrella International .NET Association (http://www.ineta.org). Membership in the group is free and meetings are open to everyone interested in learning more about .NET and meeting other developers in their local community. Please visit us at our next meeting or drop us an email (board@onetug.org) if you have any questions. "/>
+                <TextBlock Style="{StaticResource ContentTextStyle}" TextWrapping="Wrap" Width="760" FontSize="15" Margin="0,5,0,0" UseLayoutRounding="True"
+                           Text="Code Camp is a community event where developers come to learn from and network with their peers. Expect lots of education, networking and food. The basic format is that of a traditional conference. We start with registration Saturday morning. After that, we will have a short briefing and keynote followed by lots of sessions and prizes. Lunch follows after that, and then more sessions, more prizes, and then closing remarks (and even more prizes). We usually get together for a pub club (a dinner/gathering type event) hosted by one of our sponsors." />
+
+                <TextBlock Style="{StaticResource ContentTextStyle}" Width="760" FontSize="15" Margin="0,5,0,0"
+                           Text="An original Code Camp organizer, Thom Robbins, wrote a six-point manifesto:"/>
+                <TextBlock Text=" " Margin="0"/>
+                <TextBlock Style="{StaticResource ContentTextStyle}" Width="760" FontSize="13" Margin="0,-8,0,0"
+                           Text="     - By and for the developer community"/>
+                <TextBlock Style="{StaticResource ContentTextStyle}" Width="760" FontSize="13" Margin="0"
+                           Text="     - Always free"/>
+                <TextBlock Style="{StaticResource ContentTextStyle}" Width="760" FontSize="13" Margin="0"
+                           Text="     - Community developed material"/>
+                <TextBlock Style="{StaticResource ContentTextStyle}" Width="760" FontSize="13" Margin="0"
+                           Text="     - No fluff – only code"/>
+                <TextBlock Style="{StaticResource ContentTextStyle}" Width="760" FontSize="13" Margin="0"
+                           Text="     - Community ownership"/>
+                <TextBlock Style="{StaticResource ContentTextStyle}" Width="760" FontSize="13" Margin="0"
+                           Text="     - Never occur during working hours"/>
+
+                <TextBlock Style="{StaticResource ContentTextStyle}" Width="760" FontSize="15" Margin="0,5,0,0"
+                           Text="We hope you truly enjoy this year's event!"/>
+                <TextBlock Margin="0,10,0,0" Style="{StaticResource ContentTextStyle}" Foreground="{StaticResource ColorAccentHighlightBrush}" Text="Web site and Silverlight application developers: John Smith, Bob Baker, Zdravko Danev, Esteban Garcia, Brian Hall, and Joe Robe." FontSize="13"/>
+                <TextBlock Margin="0" Style="{StaticResource ContentTextStyle}" Foreground="{StaticResource ColorAccentHighlightBrush}" Text="Special thanks to Joe Robe for hosting our Subversion Source Code Control Repository and to Rob Eisenberg for Caliburn.Micro." FontSize="13"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+
+</navigation:Page>

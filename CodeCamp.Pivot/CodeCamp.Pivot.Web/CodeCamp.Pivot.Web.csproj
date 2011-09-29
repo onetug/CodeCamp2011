@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34B6D66E-857D-4AC3-AF26-9EC1F139A282}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeCamp.Pivot.Web</RootNamespace>
+    <AssemblyName>CodeCamp.Pivot.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplicationList>{9EB12F51-A2FC-4A5C-9F00-2F025090E35B}|..\CodeCamp.Pivot\CodeCamp.Pivot.csproj|ClientBin|False</SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="ClientBin\CodeCamp.Pivot.xap" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\CodeCamp-Icon.png" />
+    <Content Include="Images\NoImage.png" />
+    <Content Include="Images\NoImageAvailabla.png" />
+    <Content Include="Images\PhotoNotAvailable.png" />
+    <Content Include="Sessions_files\images\18eed2a739f4823a79692396df2175d2.xml" />
+    <Content Include="Sessions_files\images\18eed2a739f4823a79692396df2175d2_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\18eed2a739f4823a79692396df2175d2_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\18eed2a739f4823a79692396df2175d2_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\18eed2a739f4823a79692396df2175d2_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\18eed2a739f4823a79692396df2175d2_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\18eed2a739f4823a79692396df2175d2_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\18eed2a739f4823a79692396df2175d2_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\18eed2a739f4823a79692396df2175d2_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\18eed2a739f4823a79692396df2175d2_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\23213_1075052608_9121_n.xml" />
+    <Content Include="Sessions_files\images\23213_1075052608_9121_n_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\23213_1075052608_9121_n_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\23213_1075052608_9121_n_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\23213_1075052608_9121_n_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\23213_1075052608_9121_n_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\23213_1075052608_9121_n_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\23213_1075052608_9121_n_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\23213_1075052608_9121_n_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\23213_1075052608_9121_n_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\3031061.xml" />
+    <Content Include="Sessions_files\images\3031061_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\3031061_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\3031061_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\3031061_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\3031061_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\3031061_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\3031061_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\3031061_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\48773ffb8d41cff072041b6bd20ec896.xml" />
+    <Content Include="Sessions_files\images\48773ffb8d41cff072041b6bd20ec896_files\0\0_0.png" />
+    <Content Include="Sessions_files\images\48773ffb8d41cff072041b6bd20ec896_files\1\0_0.png" />
+    <Content Include="Sessions_files\images\48773ffb8d41cff072041b6bd20ec896_files\2\0_0.png" />
+    <Content Include="Sessions_files\images\48773ffb8d41cff072041b6bd20ec896_files\3\0_0.png" />
+    <Content Include="Sessions_files\images\48773ffb8d41cff072041b6bd20ec896_files\4\0_0.png" />
+    <Content Include="Sessions_files\images\48773ffb8d41cff072041b6bd20ec896_files\5\0_0.png" />
+    <Content Include="Sessions_files\images\48773ffb8d41cff072041b6bd20ec896_files\6\0_0.png" />
+    <Content Include="Sessions_files\images\48773ffb8d41cff072041b6bd20ec896_files\7\0_0.png" />
+    <Content Include="Sessions_files\images\5de7ca7c-0e02-4c35-8e34-79942d6bdfe5Alexander-Koval.xml" />
+    <Content Include="Sessions_files\images\5de7ca7c-0e02-4c35-8e34-79942d6bdfe5Alexander-Koval_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\5de7ca7c-0e02-4c35-8e34-79942d6bdfe5Alexander-Koval_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\5de7ca7c-0e02-4c35-8e34-79942d6bdfe5Alexander-Koval_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\5de7ca7c-0e02-4c35-8e34-79942d6bdfe5Alexander-Koval_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\5de7ca7c-0e02-4c35-8e34-79942d6bdfe5Alexander-Koval_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\5de7ca7c-0e02-4c35-8e34-79942d6bdfe5Alexander-Koval_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\5de7ca7c-0e02-4c35-8e34-79942d6bdfe5Alexander-Koval_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\5de7ca7c-0e02-4c35-8e34-79942d6bdfe5Alexander-Koval_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\5de7ca7c-0e02-4c35-8e34-79942d6bdfe5Alexander-Koval_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\73f6f495b7fe92f9bac00537b6e30fd9_reasonably_small.xml" />
+    <Content Include="Sessions_files\images\73f6f495b7fe92f9bac00537b6e30fd9_reasonably_small_files\0\0_0.png" />
+    <Content Include="Sessions_files\images\73f6f495b7fe92f9bac00537b6e30fd9_reasonably_small_files\1\0_0.png" />
+    <Content Include="Sessions_files\images\73f6f495b7fe92f9bac00537b6e30fd9_reasonably_small_files\2\0_0.png" />
+    <Content Include="Sessions_files\images\73f6f495b7fe92f9bac00537b6e30fd9_reasonably_small_files\3\0_0.png" />
+    <Content Include="Sessions_files\images\73f6f495b7fe92f9bac00537b6e30fd9_reasonably_small_files\4\0_0.png" />
+    <Content Include="Sessions_files\images\73f6f495b7fe92f9bac00537b6e30fd9_reasonably_small_files\5\0_0.png" />
+    <Content Include="Sessions_files\images\73f6f495b7fe92f9bac00537b6e30fd9_reasonably_small_files\6\0_0.png" />
+    <Content Include="Sessions_files\images\73f6f495b7fe92f9bac00537b6e30fd9_reasonably_small_files\7\0_0.png" />
+    <Content Include="Sessions_files\images\Avatar.xml" />
+    <Content Include="Sessions_files\images\Avatar_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\Avatar_files\0\0_0.png" />
+    <Content Include="Sessions_files\images\Avatar_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\Avatar_files\1\0_0.png" />
+    <Content Include="Sessions_files\images\Avatar_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\Avatar_files\2\0_0.png" />
+    <Content Include="Sessions_files\images\Avatar_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\Avatar_files\3\0_0.png" />
+    <Content Include="Sessions_files\images\Avatar_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\Avatar_files\4\0_0.png" />
+    <Content Include="Sessions_files\images\Avatar_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\Avatar_files\5\0_0.png" />
+    <Content Include="Sessions_files\images\Avatar_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\Avatar_files\6\0_0.png" />
+    <Content Include="Sessions_files\images\Avatar_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\Avatar_files\7\0_0.png" />
+    <Content Include="Sessions_files\images\Avatar_files\8\0_0.png" />
+    <Content Include="Sessions_files\images\Corne_New.xml" />
+    <Content Include="Sessions_files\images\Corne_New_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\Corne_New_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\Corne_New_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\Corne_New_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\Corne_New_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\Corne_New_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\Corne_New_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\Corne_New_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0120.xml" />
+    <Content Include="Sessions_files\images\DSC_0120_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0120_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0120_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0120_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0120_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0120_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0120_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0120_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0120_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0126.xml" />
+    <Content Include="Sessions_files\images\DSC_0126_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0126_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0126_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0126_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0126_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0126_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0126_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0126_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\DSC_0126_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\esteban.xml" />
+    <Content Include="Sessions_files\images\esteban_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\esteban_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\esteban_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\esteban_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\esteban_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\esteban_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\esteban_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\esteban_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\esteban_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\esteban_files\9\0_0.jpg" />
+    <Content Include="Sessions_files\images\esteban_files\9\0_1.jpg" />
+    <Content Include="Sessions_files\images\esteban_files\9\1_0.jpg" />
+    <Content Include="Sessions_files\images\esteban_files\9\1_1.jpg" />
+    <Content Include="Sessions_files\images\FacebookShot2.xml" />
+    <Content Include="Sessions_files\images\FacebookShot2_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\FacebookShot2_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\FacebookShot2_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\FacebookShot2_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\FacebookShot2_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\FacebookShot2_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\FacebookShot2_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\FacebookShot2_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\greg_new.xml" />
+    <Content Include="Sessions_files\images\greg_new_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\greg_new_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\greg_new_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\greg_new_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\greg_new_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\greg_new_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\greg_new_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\greg_new_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\greg_new_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\greg_new_files\9\0_0.jpg" />
+    <Content Include="Sessions_files\images\greg_new_files\9\0_1.jpg" />
+    <Content Include="Sessions_files\images\greg_new_files\9\1_0.jpg" />
+    <Content Include="Sessions_files\images\greg_new_files\9\1_1.jpg" />
+    <Content Include="Sessions_files\images\henry_102_102.xml" />
+    <Content Include="Sessions_files\images\henry_102_102_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\henry_102_102_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\henry_102_102_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\henry_102_102_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\henry_102_102_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\henry_102_102_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\henry_102_102_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\henry_102_102_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245.xml" />
+    <Content Include="Sessions_files\images\IMG_3245_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\10\0_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\10\0_1.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\10\0_2.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\10\1_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\10\1_1.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\10\1_2.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\9\0_0.jpg" />
+    <Content Include="Sessions_files\images\IMG_3245_files\9\0_1.jpg" />
+    <Content Include="Sessions_files\images\Ivan_Farkas-150.xml" />
+    <Content Include="Sessions_files\images\Ivan_Farkas-150_files\0\0_0.png" />
+    <Content Include="Sessions_files\images\Ivan_Farkas-150_files\1\0_0.png" />
+    <Content Include="Sessions_files\images\Ivan_Farkas-150_files\2\0_0.png" />
+    <Content Include="Sessions_files\images\Ivan_Farkas-150_files\3\0_0.png" />
+    <Content Include="Sessions_files\images\Ivan_Farkas-150_files\4\0_0.png" />
+    <Content Include="Sessions_files\images\Ivan_Farkas-150_files\5\0_0.png" />
+    <Content Include="Sessions_files\images\Ivan_Farkas-150_files\6\0_0.png" />
+    <Content Include="Sessions_files\images\Ivan_Farkas-150_files\7\0_0.png" />
+    <Content Include="Sessions_files\images\Ivan_Farkas-150_files\8\0_0.png" />
+    <Content Include="Sessions_files\images\JasonNew.xml" />
+    <Content Include="Sessions_files\images\JasonNew_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\JasonNew_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\JasonNew_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\JasonNew_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\JasonNew_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\JasonNew_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\JasonNew_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\JasonNew_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\JasonNew_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640_.xml" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\10\0_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\10\0_1.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\10\0_2.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\10\1_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\10\1_1.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\10\1_2.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\9\0_0.jpg" />
+    <Content Include="Sessions_files\images\John_Wang__544x640__files\9\0_1.jpg" />
+    <Content Include="Sessions_files\images\Jorgensen_.xml" />
+    <Content Include="Sessions_files\images\Jorgensen__files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\Jorgensen__files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\Jorgensen__files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\Jorgensen__files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\Jorgensen__files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\Jorgensen__files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\Jorgensen__files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\Jorgensen__files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\Jorgensen__files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\KonradTempPicture.xml" />
+    <Content Include="Sessions_files\images\KonradTempPicture_files\0\0_0.png" />
+    <Content Include="Sessions_files\images\KonradTempPicture_files\1\0_0.png" />
+    <Content Include="Sessions_files\images\KonradTempPicture_files\2\0_0.png" />
+    <Content Include="Sessions_files\images\KonradTempPicture_files\3\0_0.png" />
+    <Content Include="Sessions_files\images\KonradTempPicture_files\4\0_0.png" />
+    <Content Include="Sessions_files\images\KonradTempPicture_files\5\0_0.png" />
+    <Content Include="Sessions_files\images\KonradTempPicture_files\6\0_0.png" />
+    <Content Include="Sessions_files\images\KonradTempPicture_files\7\0_0.png" />
+    <Content Include="Sessions_files\images\KonradTempPicture_files\8\0_0.png" />
+    <Content Include="Sessions_files\images\KonradTempPicture_files\9\0_0.png" />
+    <Content Include="Sessions_files\images\KonradTempPicture_files\9\1_0.png" />
+    <Content Include="Sessions_files\images\michael.xml" />
+    <Content Include="Sessions_files\images\michael_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\michael_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\michael_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\michael_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\michael_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\michael_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\michael_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\michael_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\michael_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\MitchelSmall.xml" />
+    <Content Include="Sessions_files\images\MitchelSmall_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\MitchelSmall_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\MitchelSmall_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\MitchelSmall_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\MitchelSmall_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\MitchelSmall_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\MitchelSmall_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\MitchelSmall_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\MitchelSmall_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\MitchelSmall_files\9\0_0.jpg" />
+    <Content Include="Sessions_files\images\MitchelSmall_files\9\0_1.jpg" />
+    <Content Include="Sessions_files\images\mypic1.xml" />
+    <Content Include="Sessions_files\images\mypic1_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\mypic1_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\mypic1_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\mypic1_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\mypic1_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\mypic1_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\mypic1_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\mypic1_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\mypic1_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\mypic1_files\9\0_0.jpg" />
+    <Content Include="Sessions_files\images\mypic1_files\9\0_1.jpg" />
+    <Content Include="Sessions_files\images\mypic1_files\9\1_0.jpg" />
+    <Content Include="Sessions_files\images\mypic1_files\9\1_1.jpg" />
+    <Content Include="Sessions_files\images\oleg-sych.xml" />
+    <Content Include="Sessions_files\images\oleg-sych_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\oleg-sych_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\oleg-sych_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\oleg-sych_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\oleg-sych_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\oleg-sych_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\oleg-sych_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\oleg-sych_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\photo.xml" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable.xml" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\0\0_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\10\0_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\10\0_1.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\10\0_2.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\10\1_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\10\1_1.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\10\1_2.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\10\2_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\10\2_1.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\10\2_2.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\1\0_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\2\0_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\3\0_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\4\0_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\5\0_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\6\0_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\7\0_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\8\0_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\9\0_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\9\0_1.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\9\1_0.png" />
+    <Content Include="Sessions_files\images\PhotoNotAvailable_files\9\1_1.png" />
+    <Content Include="Sessions_files\images\photo_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\photo_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\photo_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\photo_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\photo_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\photo_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\photo_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\photo_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\plamen.xml" />
+    <Content Include="Sessions_files\images\plamen_files\0\0_0.png" />
+    <Content Include="Sessions_files\images\plamen_files\1\0_0.png" />
+    <Content Include="Sessions_files\images\plamen_files\2\0_0.png" />
+    <Content Include="Sessions_files\images\plamen_files\3\0_0.png" />
+    <Content Include="Sessions_files\images\plamen_files\4\0_0.png" />
+    <Content Include="Sessions_files\images\plamen_files\5\0_0.png" />
+    <Content Include="Sessions_files\images\plamen_files\6\0_0.png" />
+    <Content Include="Sessions_files\images\plamen_files\7\0_0.png" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300.xml" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\9\0_0.jpg" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\9\0_1.jpg" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\9\1_0.jpg" />
+    <Content Include="Sessions_files\images\portrait-ralph-williams-300_300_files\9\1_1.jpg" />
+    <Content Include="Sessions_files\images\PR2.xml" />
+    <Content Include="Sessions_files\images\PR2_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\PR2_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\PR2_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\PR2_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\PR2_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\PR2_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\PR2_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\PR2_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\PR2_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\prakash.xml" />
+    <Content Include="Sessions_files\images\prakash_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\prakash_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\prakash_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\prakash_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\prakash_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\prakash_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\prakash_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\prakash_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\prakash_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\prakash_files\9\0_0.jpg" />
+    <Content Include="Sessions_files\images\prakash_files\9\0_1.jpg" />
+    <Content Include="Sessions_files\images\prakash_files\9\1_0.jpg" />
+    <Content Include="Sessions_files\images\prakash_files\9\1_1.jpg" />
+    <Content Include="Sessions_files\images\profile-image-display.xml" />
+    <Content Include="Sessions_files\images\profile-image-display_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile-image-display_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile-image-display_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile-image-display_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile-image-display_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile-image-display_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile-image-display_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile-image-display_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile.xml" />
+    <Content Include="Sessions_files\images\profile_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\profile_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400.xml" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\9\0_0.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\9\0_1.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\9\1_0.jpg" />
+    <Content Include="Sessions_files\images\rich_5F00_headshot_2D00_Medium.jpg_2D00_500x400_files\9\1_1.jpg" />
+    <Content Include="Sessions_files\images\RyanParsley.xml" />
+    <Content Include="Sessions_files\images\RyanParsley_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\RyanParsley_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\RyanParsley_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\RyanParsley_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\RyanParsley_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\RyanParsley_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\RyanParsley_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\RyanParsley_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\RyanParsley_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\ryan_prof_thumb.xml" />
+    <Content Include="Sessions_files\images\ryan_prof_thumb_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\ryan_prof_thumb_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\ryan_prof_thumb_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\ryan_prof_thumb_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\ryan_prof_thumb_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\ryan_prof_thumb_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\ryan_prof_thumb_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\ryan_prof_thumb_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\ryan_prof_thumb_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\sam_abraham_bio.xml" />
+    <Content Include="Sessions_files\images\sam_abraham_bio_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\sam_abraham_bio_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\sam_abraham_bio_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\sam_abraham_bio_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\sam_abraham_bio_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\sam_abraham_bio_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\sam_abraham_bio_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\sam_abraham_bio_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\sam_abraham_bio_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\secondarythumb.xml" />
+    <Content Include="Sessions_files\images\secondarythumb_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\secondarythumb_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\secondarythumb_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\secondarythumb_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\secondarythumb_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\secondarythumb_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\secondarythumb_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\secondarythumb_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\secondarythumb_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\ShowPic2.xml" />
+    <Content Include="Sessions_files\images\ShowPic2_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\ShowPic2_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\ShowPic2_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\ShowPic2_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\ShowPic2_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\ShowPic2_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\ShowPic2_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\ShowPic2_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\ShowPic2_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\stanschultes-sq.xml" />
+    <Content Include="Sessions_files\images\stanschultes-sq_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\stanschultes-sq_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\stanschultes-sq_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\stanschultes-sq_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\stanschultes-sq_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\stanschultes-sq_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\stanschultes-sq_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\stanschultes-sq_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\tom-kraak1.xml" />
+    <Content Include="Sessions_files\images\tom-kraak1_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\tom-kraak1_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\tom-kraak1_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\tom-kraak1_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\tom-kraak1_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\tom-kraak1_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\tom-kraak1_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\tom-kraak1_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\tom-kraak1_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\TonyValenti.xml" />
+    <Content Include="Sessions_files\images\TonyValenti_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\TonyValenti_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\TonyValenti_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\TonyValenti_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\TonyValenti_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\TonyValenti_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\TonyValenti_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\TonyValenti_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\TopHeadShot.xml" />
+    <Content Include="Sessions_files\images\TopHeadShot_files\0\0_0.png" />
+    <Content Include="Sessions_files\images\TopHeadShot_files\1\0_0.png" />
+    <Content Include="Sessions_files\images\TopHeadShot_files\2\0_0.png" />
+    <Content Include="Sessions_files\images\TopHeadShot_files\3\0_0.png" />
+    <Content Include="Sessions_files\images\TopHeadShot_files\4\0_0.png" />
+    <Content Include="Sessions_files\images\TopHeadShot_files\5\0_0.png" />
+    <Content Include="Sessions_files\images\TopHeadShot_files\6\0_0.png" />
+    <Content Include="Sessions_files\images\TopHeadShot_files\7\0_0.png" />
+    <Content Include="Sessions_files\images\TopHeadShot_files\8\0_0.png" />
+    <Content Include="Sessions_files\images\twitterProfilePhoto_bigger.xml" />
+    <Content Include="Sessions_files\images\twitterProfilePhoto_bigger_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\twitterProfilePhoto_bigger_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\twitterProfilePhoto_bigger_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\twitterProfilePhoto_bigger_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\twitterProfilePhoto_bigger_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\twitterProfilePhoto_bigger_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\twitterProfilePhoto_bigger_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\twitterProfilePhoto_bigger_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams.xml" />
+    <Content Include="Sessions_files\images\waltwilliams_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams_files\9\0_0.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams_files\9\0_1.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams_files\9\1_0.jpg" />
+    <Content Include="Sessions_files\images\waltwilliams_files\9\1_1.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01.xml" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\9\0_0.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\9\0_1.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\9\1_0.jpg" />
+    <Content Include="Sessions_files\images\willstrohl_200907_smiles_01_files\9\1_1.jpg" />
+    <Content Include="Sessions_files\images\zgramana.xml" />
+    <Content Include="Sessions_files\images\zgramana_files\0\0_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\0_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\0_1.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\0_2.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\1_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\1_1.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\1_2.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\2_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\2_1.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\2_2.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\3_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\3_1.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\3_2.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\4_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\4_1.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\10\4_2.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\1\0_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\2\0_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\3\0_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\4\0_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\5\0_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\6\0_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\7\0_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\8\0_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\8\1_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\9\0_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\9\0_1.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\9\1_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\9\1_1.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\9\2_0.jpg" />
+    <Content Include="Sessions_files\images\zgramana_files\9\2_1.jpg" />
+    <Content Include="Sessions_files\rutowwbd.w3q.xml" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\0\0_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\1\0_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\2\0_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\3\0_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\4\0_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\5\0_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\5\1_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\6\0_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\6\0_1.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\6\1_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\6\1_1.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\6\2_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\6\3_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\0_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\0_1.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\0_2.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\0_3.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\1_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\1_1.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\1_2.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\1_3.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\2_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\2_1.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\2_2.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\2_3.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\3_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\3_1.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\3_2.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\3_3.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\4_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\4_1.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\5_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\5_1.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\6_0.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\6_1.png" />
+    <Content Include="Sessions_files\rutowwbd.w3q_files\7\7_0.png" />
+    <Content Include="Silverlight.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sessions.cxml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>19104</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamp.ASP.UI.Web", "CodeCamp.ASP.Web.UI\CodeCamp.ASP.UI.Web.csproj", "{2421E513-5EC7-424E-B308-B6E041FD73DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamp.RIA.UI.Web", "CodeCamp.RIA.UI.Web\CodeCamp.RIA.UI.Web.csproj", "{83C38243-E075-471F-91B5-9AF58B3C8349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamp.RIA.UI", "CodeCamp.RIA.UI\CodeCamp.RIA.UI.csproj", "{B9DCE48E-42C1-4769-8440-87B570B45837}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamp.Model", "CodeCamp.Model\CodeCamp.Model.csproj", "{EB948AA8-8255-4050-AFD0-10593D8D0F7C}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2421E513-5EC7-424E-B308-B6E041FD73DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2421E513-5EC7-424E-B308-B6E041FD73DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2421E513-5EC7-424E-B308-B6E041FD73DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2421E513-5EC7-424E-B308-B6E041FD73DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C38243-E075-471F-91B5-9AF58B3C8349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C38243-E075-471F-91B5-9AF58B3C8349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C38243-E075-471F-91B5-9AF58B3C8349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C38243-E075-471F-91B5-9AF58B3C8349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9DCE48E-42C1-4769-8440-87B570B45837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9DCE48E-42C1-4769-8440-87B570B45837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9DCE48E-42C1-4769-8440-87B570B45837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9DCE48E-42C1-4769-8440-87B570B45837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB948AA8-8255-4050-AFD0-10593D8D0F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB948AA8-8255-4050-AFD0-10593D8D0F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB948AA8-8255-4050-AFD0-10593D8D0F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB948AA8-8255-4050-AFD0-10593D8D0F7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,32 @@
+﻿<navigation:Page 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+  xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" xmlns:views="clr-namespace:CodeCamp.RIA.UI.Views" x:Class="CodeCamp.RIA.UI.Views.SessionView"
+  mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480"  
+  Style="{StaticResource PageStyle}">
+
+  <Grid x:Name="LayoutRoot">
+        <views:SponsorWidgetView VerticalAlignment="Top" HorizontalAlignment="Left" Background="Transparent"/>
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}" Margin="30,-20,0,10">
+
+      <StackPanel x:Name="ContentStackPanel" Style="{StaticResource ContentStackPanelStyle}" HorizontalAlignment="Center">
+
+        <TextBlock x:Name="HeaderText" Style="{StaticResource HeaderTextStyle}" Margin="0,5"
+                           Text="{Binding ApplicationStrings.SessionsPageTitle, Source={StaticResource ResourceWrapper}}"/>
+        <TextBlock x:Name="ContentText" Style="{StaticResource ContentTextStyle}" 
+                           Text="Sessions page content"/>
+
+      	<sdk:DataGrid Height="100">
+			<sdk:DataGrid.Columns>
+				<sdk:DataGridTextColumn x:Name="TrackName"/>
+			</sdk:DataGrid.Columns>
+		</sdk:DataGrid>
+
+      </StackPanel>
+
+    </ScrollViewer>
+  </Grid>
+
+</navigation:Page>
